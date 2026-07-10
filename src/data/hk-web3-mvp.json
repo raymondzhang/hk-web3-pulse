@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-06",
+  "lastUpdated": "2026-07-10",
   "overallStatus": "Advancing",
   "overallDescription": "在监管框架与RWA领域已进入 Advancing 阶段，稳定币处于 Developing 向 Advancing 过渡",
   "domains": [
@@ -18,21 +18,21 @@
         {
           "date": "2025-08",
           "description": "稳定币发行人监管框架条例正式生效",
-          "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/08/20250801-4/"
+          "source": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/stablecoin-issuers/"
         },
         {
-          "date": "2026-01",
-          "description": "首批稳定币发行人牌照开始发放（高门槛，仅少数获批）",
-          "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/01/20260115-4/"
+          "date": "2026-04",
+          "description": "HKMA发放首批稳定币发行人牌照（Anchorpoint、汇丰，高门槛仅少数获批）",
+          "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260410-4/"
         },
         {
           "date": "2026-Q2",
           "description": "托管服务与数字资产交易商新规正在推进立法",
-          "source": "https://www.news.gov.hk/chi/2026/04/20260416/20260416_095038_868.html"
+          "source": "https://www.news.gov.hk"
         }
       ],
       "globalComparison": "与新加坡监管水平接近，执行速度较快；迪拜VARA更激进但合规门槛相对较低",
-      "lastUpdated": "2026-07-06"
+      "lastUpdated": "2026-07-10"
     },
     {
       "id": "rwa",
@@ -42,33 +42,38 @@
       "description": "香港在真实世界资产（RWA）代币化领域处于全球领先地位，政府和监管机构积极推动。",
       "milestones": [
         {
+          "date": "2023-02",
+          "description": "香港政府发行全球首只代币化绿色债券，规模8亿港元",
+          "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2023/02/20230216-3/"
+        },
+        {
           "date": "2024-02",
-          "description": "香港政府成功发行首批代币化绿色债券，规模8亿港元",
-          "source": "https://www.hkgb.gov.hk/en/"
+          "description": "香港政府发行第二批代币化绿色债券，规模约60亿港元（多币种）",
+          "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2024/02/20240207-6/"
         },
         {
           "date": "2024-08",
           "description": "HKMA启动Project Ensemble沙盒，探索代币化资产银行间交易",
-          "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2024/08/20240828-3/"
+          "source": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/fintech/project-ensemble/"
         },
         {
           "date": "2025-06",
           "description": "Project Ensemble推进至EnsembleTX阶段，扩展至更广泛的代币化应用场景",
-          "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/06/20250615-3/"
+          "source": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/fintech/project-ensemble/"
         },
         {
           "date": "2025-12",
           "description": "代币化绿色和基建债券累计发行规模超过20亿美元",
-          "source": "https://www.news.gov.hk/chi/2025/12/20251220/20251220_102345_123.html"
+          "source": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/bond-market-development/digital-bond-knowledge-repository/"
         },
         {
           "date": "2026-03",
           "description": "SFC批准首只房地产代币化产品及商品RWA基金",
-          "source": "https://www.sfc.hk/en/news/announcements/sfc/press-release/2026/20260315-1"
+          "source": "https://www.sfc.hk"
         }
       ],
       "globalComparison": "香港在RWA代币化方面领先新加坡和迪拜，政府直接参与发行为全球罕见",
-      "lastUpdated": "2026-07-06"
+      "lastUpdated": "2026-07-10"
     },
     {
       "id": "stablecoins",
@@ -85,21 +90,21 @@
         {
           "date": "2025-08",
           "description": "《稳定币条例》正式生效，HKMA成为稳定币发行人监管机构",
-          "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/08/20250801-4/"
+          "source": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/stablecoin-issuers/"
         },
         {
           "date": "2025-10",
-          "description": "HKMA收到70+ expressions of interest，强调需有可行商业模式",
-          "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/10/20251020-2/"
+          "description": "HKMA收到70多份稳定币发行人意向表达，强调需有可行商业模式",
+          "source": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/stablecoin-issuers/"
         },
         {
-          "date": "2026-01",
-          "description": "首批稳定币发行人牌照开始发放，门槛较高，仅少数机构获批",
-          "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/01/20260115-4/"
+          "date": "2026-04",
+          "description": "HKMA发放首批稳定币发行人牌照（Anchorpoint、汇丰），门槛较高仅少数机构获批",
+          "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260410-4/"
         }
       ],
       "globalComparison": "新加坡MAS稳定币框架2023年已先行落地；迪拜对稳定币态度开放但监管细则仍在完善",
-      "lastUpdated": "2026-07-06"
+      "lastUpdated": "2026-07-10"
     }
   ],
   "comparison": [
@@ -117,7 +122,7 @@
     },
     {
       "area": "Stablecoins",
-      "hongKong": "Developing — 条例生效，首批牌照刚发放",
+      "hongKong": "Developing — 条例生效，首批牌照已发放",
       "singapore": "Advancing — 监管框架先行，市场活跃度较高",
       "dubai": "Developing — 态度开放，监管细则待完善"
     }
@@ -130,6 +135,12 @@
       "source": "https://www.info.gov.hk/gia/general/202210/31/P2022103100448.htm"
     },
     {
+      "date": "2023-02",
+      "title": "全球首只政府代币化绿色债券发行",
+      "description": "香港政府发行全球首只代币化绿色债券，规模8亿港元",
+      "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2023/02/20230216-3/"
+    },
+    {
       "date": "2023-06",
       "title": "VATPs牌照制度生效",
       "description": "虚拟资产交易平台发牌制度正式实施，所有在港运营平台须持牌",
@@ -137,9 +148,9 @@
     },
     {
       "date": "2024-02",
-      "title": "首批代币化绿色债券发行",
-      "description": "香港政府发行全球首批代币化绿色债券，规模8亿港元",
-      "source": "https://www.hkgb.gov.hk/en/"
+      "title": "第二批代币化绿色债券发行",
+      "description": "香港政府发行第二批代币化绿色债券，规模约60亿港元（多币种）",
+      "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2024/02/20240207-6/"
     },
     {
       "date": "2024-07",
@@ -151,49 +162,49 @@
       "date": "2024-08",
       "title": "Project Ensemble沙盒启动",
       "description": "HKMA启动Ensemble沙盒，探索代币化资产在银行间交易的应用",
-      "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2024/08/20240828-3/"
+      "source": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/fintech/project-ensemble/"
     },
     {
       "date": "2025-06",
       "title": "EnsembleTX阶段启动",
       "description": "Project Ensemble扩展至EnsembleTX，覆盖更广泛的代币化资产场景",
-      "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/06/20250615-3/"
+      "source": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/fintech/project-ensemble/"
     },
     {
       "date": "2025-08",
       "title": "稳定币条例正式生效",
       "description": "《稳定币条例》正式生效，HKMA开始接受发行人牌照申请",
-      "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/08/20250801-4/"
+      "source": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/stablecoin-issuers/"
     },
     {
       "date": "2025-10",
-      "title": "70+稳定币意向申请",
+      "title": "70多份稳定币意向申请",
       "description": "HKMA收到超过70份稳定币发行人意向表达，强调需有可行商业模式",
-      "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/10/20251020-2/"
+      "source": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/stablecoin-issuers/"
     },
     {
       "date": "2025-12",
       "title": "代币化债券累计超20亿美元",
       "description": "香港代币化绿色和基建债券累计发行规模突破20亿美元",
-      "source": "https://www.news.gov.hk/chi/2025/12/20251220/20251220_102345_123.html"
-    },
-    {
-      "date": "2026-01",
-      "title": "首批稳定币牌照发放",
-      "description": "HKMA向少数符合条件的机构发放首批稳定币发行人牌照",
-      "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/01/20260115-4/"
+      "source": "https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/bond-market-development/digital-bond-knowledge-repository/"
     },
     {
       "date": "2026-03",
       "title": "首只房地产RWA产品获批",
       "description": "SFC批准首只房地产代币化产品及商品RWA基金",
-      "source": "https://www.sfc.hk/en/news/announcements/sfc/press-release/2026/20260315-1"
+      "source": "https://www.sfc.hk"
+    },
+    {
+      "date": "2026-04",
+      "title": "首批稳定币牌照发放",
+      "description": "HKMA向Anchorpoint与汇丰发放首批稳定币发行人牌照",
+      "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260410-4/"
     },
     {
       "date": "2026-Q2",
       "title": "托管与交易商新规推进",
       "description": "虚拟资产托管服务和数字资产交易商新规正在推进立法",
-      "source": "https://www.news.gov.hk/chi/2026/04/20260416/20260416_095038_868.html"
+      "source": "https://www.news.gov.hk"
     }
   ],
   "sources": [
@@ -212,10 +223,6 @@
     {
       "name": "香港财政司司长办公室",
       "url": "https://www.fso.gov.hk"
-    },
-    {
-      "name": "Atlantic Council CBDC Tracker",
-      "url": "https://www.atlanticcouncil.org/cbdctracker/"
     },
     {
       "name": "新加坡金管局 (MAS)",

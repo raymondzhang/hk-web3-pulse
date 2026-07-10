@@ -38,7 +38,7 @@ export const en = {
     subtitle:
       "Hong Kong vs Singapore vs Dubai — Cross-domain comparison across three key areas",
     dataSource:
-      "Data Sources: Atlantic Council / OMFIF Tracker + MAS website + VARA public information",
+      "Data Sources: SFC / HKMA official information + MAS website + VARA public information",
     headers: {
       area: "Domain",
       hongKong: "Hong Kong",
@@ -92,9 +92,9 @@ export const en = {
           ],
         },
         {
-          date: "2026-01",
+          date: "2026-04",
           description: [
-            "First batch of stablecoin issuer licenses issued (high threshold, only a few approved)",
+            "HKMA granted the first stablecoin issuer licences (Anchorpoint and HSBC; high threshold, only a few approved)",
           ],
         },
         {
@@ -104,7 +104,7 @@ export const en = {
           ],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-07-10",
     },
     {
       id: "rwa",
@@ -115,9 +115,15 @@ export const en = {
         "Hong Kong leads both Singapore and Dubai in RWA tokenization; direct government participation in bond issuance is rare worldwide.",
       milestones: [
         {
+          date: "2023-02",
+          description: [
+            "Hong Kong government issued the world's first government tokenized green bond, totaling HK$800 million",
+          ],
+        },
+        {
           date: "2024-02",
           description: [
-            "Hong Kong government successfully issued the first tranche of tokenized green bonds, totaling HK$800 million",
+            "Hong Kong government issued the second tranche of tokenized green bonds, about HK$6 billion (multi-currency)",
           ],
         },
         {
@@ -145,13 +151,13 @@ export const en = {
           ],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-07-10",
     },
     {
       id: "stablecoins",
       name: "Stablecoins",
       description:
-        "The stablecoin regulatory framework has been enacted and issuer licenses are being granted, but market size and ecosystem remain in early development.",
+        "The stablecoin regulatory framework has been enacted and issuer licences have begun to be granted, but market size and ecosystem remain in early development.",
       globalComparison:
         "Singapore's MAS stablecoin framework was enacted earlier in 2023; Dubai maintains an open stance on stablecoins but detailed regulations are still being refined.",
       milestones: [
@@ -170,17 +176,17 @@ export const en = {
         {
           date: "2025-10",
           description: [
-            "HKMA received 70+ expressions of interest, emphasizing the need for viable business models",
+            "HKMA received over 70 expressions of interest from prospective issuers, emphasizing the need for viable business models",
           ],
         },
         {
-          date: "2026-01",
+          date: "2026-04",
           description: [
-            "First batch of stablecoin issuer licenses began issuance; high threshold with only a few institutions approved",
+            "HKMA granted the first stablecoin issuer licences (Anchorpoint and HSBC); high threshold with only a few institutions approved",
           ],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-07-10",
     },
   ],
 
@@ -199,7 +205,7 @@ export const en = {
     },
     {
       area: "Stablecoins",
-      hongKong: "Developing — Ordinance in effect; first batch of licenses just issued",
+      hongKong: "Developing — Ordinance in effect; first batch of licences issued",
       singapore: "Advancing — Regulatory framework was enacted first; higher market activity",
       dubai: "Developing — Open stance; detailed regulations still being refined",
     },
@@ -213,16 +219,16 @@ export const en = {
         "New regulations for virtual asset custody services and digital asset dealers are advancing through legislation.",
     },
     {
+      date: "2026-04",
+      title: "First Stablecoin Licences Issued",
+      description:
+        "HKMA granted the first stablecoin issuer licences to Anchorpoint and HSBC.",
+    },
+    {
       date: "2026-03",
       title: "First Real Estate RWA Product Approved",
       description:
         "SFC approved the first real estate tokenization product and commodity RWA fund.",
-    },
-    {
-      date: "2026-01",
-      title: "First Stablecoin Licenses Issued",
-      description:
-        "HKMA issued the first batch of stablecoin issuer licenses to a select group of qualified institutions.",
     },
     {
       date: "2025-12",
@@ -240,7 +246,7 @@ export const en = {
       date: "2025-08",
       title: "Stablecoin Ordinance Officially Enacted",
       description:
-        "The Stablecoin Ordinance officially came into effect; HKMA began accepting stablecoin issuer license applications.",
+        "The Stablecoin Ordinance officially came into effect; HKMA began accepting stablecoin issuer licence applications.",
     },
     {
       date: "2025-06",
@@ -262,15 +268,21 @@ export const en = {
     },
     {
       date: "2024-02",
-      title: "First Tokenized Green Bonds Issued",
+      title: "Second Tokenized Green Bond Issuance",
       description:
-        "The Hong Kong government issued the world's first tranche of tokenized green bonds, totaling HK$800 million.",
+        "The Hong Kong government issued the second tranche of tokenized green bonds, about HK$6 billion (multi-currency).",
     },
     {
       date: "2023-06",
       title: "VATP Licensing Regime Takes Effect",
       description:
         "The virtual asset trading platform licensing regime was officially implemented; all platforms operating in Hong Kong are required to be licensed.",
+    },
+    {
+      date: "2023-02",
+      title: "World's First Government Tokenized Green Bond",
+      description:
+        "The Hong Kong government issued the world's first government tokenized green bond, totaling HK$800 million.",
     },
     {
       date: "2022-10",
@@ -303,7 +315,7 @@ export const en = {
     privacyNote: "We will never share your personal information",
     submitButton: "Submit",
     sending: "Sending…",
-    sent: "Submitted, thank you!",
+    sent: "Mail client opened — please confirm send. Thank you!",
     error: "Submission failed. Please try again later or email us directly.",
     directEmail: "Or email us directly at 414628016@qq.com",
   },
@@ -313,7 +325,6 @@ export const en = {
     { name: "Hong Kong Monetary Authority (HKMA)", url: "https://www.hkma.gov.hk" },
     { name: "Hong Kong Government News", url: "https://www.news.gov.hk" },
     { name: "Office of the Financial Secretary", url: "https://www.fso.gov.hk" },
-    { name: "Atlantic Council CBDC Tracker", url: "https://www.atlanticcouncil.org/cbdctracker/" },
     { name: "Monetary Authority of Singapore (MAS)", url: "https://www.mas.gov.sg" },
     { name: "Dubai Virtual Assets Regulatory Authority (VARA)", url: "https://vara.ae" },
   ],

@@ -38,7 +38,7 @@ export const zhCN = {
     subtitle:
       "香港 vs 新加坡 vs 迪拜 — 三大关键领域横向对比",
     dataSource:
-      "数据来源：Atlantic Council / OMFIF Tracker + MAS官网 + VARA公开信息",
+      "数据来源：SFC / HKMA 官方信息 + MAS官网 + VARA公开信息",
     headers: {
       area: "领域",
       hongKong: "香港",
@@ -86,9 +86,9 @@ export const zhCN = {
           description: ["稳定币发行人监管框架条例正式生效"],
         },
         {
-          date: "2026-01",
+          date: "2026-04",
           description: [
-            "首批稳定币发行人牌照开始发放（高门槛，仅少数获批）",
+            "HKMA发放首批稳定币发行人牌照（Anchorpoint、汇丰，高门槛仅少数获批）",
           ],
         },
         {
@@ -96,7 +96,7 @@ export const zhCN = {
           description: ["托管服务与数字资产交易商新规正在推进立法"],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-07-10",
     },
     {
       id: "rwa",
@@ -107,9 +107,15 @@ export const zhCN = {
         "香港在RWA代币化方面领先新加坡和迪拜，政府直接参与发行为全球罕见",
       milestones: [
         {
+          date: "2023-02",
+          description: [
+            "香港政府发行全球首只代币化绿色债券，规模8亿港元",
+          ],
+        },
+        {
           date: "2024-02",
           description: [
-            "香港政府成功发行首批代币化绿色债券，规模8亿港元",
+            "香港政府发行第二批代币化绿色债券，规模约60亿港元（多币种）",
           ],
         },
         {
@@ -135,13 +141,13 @@ export const zhCN = {
           description: ["SFC批准首只房地产代币化产品及商品RWA基金"],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-07-10",
     },
     {
       id: "stablecoins",
       name: "稳定币",
       description:
-        "稳定币监管框架已落地，发行人牌照开始发放，但市场规模和生态仍处于早期发展阶段。",
+        "稳定币监管框架已落地，发行人牌照已开始发放，但市场规模和生态仍处于早期发展阶段。",
       globalComparison:
         "新加坡MAS稳定币框架2023年已先行落地；迪拜对稳定币态度开放但监管细则仍在完善",
       milestones: [
@@ -160,17 +166,17 @@ export const zhCN = {
         {
           date: "2025-10",
           description: [
-            "HKMA收到70+ expressions of interest，强调需有可行商业模式",
+            "HKMA收到70多份稳定币发行人意向表达，强调需有可行商业模式",
           ],
         },
         {
-          date: "2026-01",
+          date: "2026-04",
           description: [
-            "首批稳定币发行人牌照开始发放，门槛较高，仅少数机构获批",
+            "HKMA发放首批稳定币发行人牌照（Anchorpoint、汇丰），门槛较高仅少数机构获批",
           ],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-07-10",
     },
   ],
 
@@ -189,7 +195,7 @@ export const zhCN = {
     },
     {
       area: "稳定币",
-      hongKong: "发展中 — 条例生效，首批牌照刚发放",
+      hongKong: "发展中 — 条例生效，首批牌照已发放",
       singapore: "积极推进 — 监管框架先行，市场活跃度较高",
       dubai: "发展中 — 态度开放，监管细则待完善",
     },
@@ -202,14 +208,14 @@ export const zhCN = {
       description: "虚拟资产托管服务和数字资产交易商新规正在推进立法",
     },
     {
+      date: "2026-04",
+      title: "首批稳定币牌照发放",
+      description: "HKMA向Anchorpoint与汇丰发放首批稳定币发行人牌照",
+    },
+    {
       date: "2026-03",
       title: "首只房地产RWA产品获批",
       description: "SFC批准首只房地产代币化产品及商品RWA基金",
-    },
-    {
-      date: "2026-01",
-      title: "首批稳定币牌照发放",
-      description: "HKMA向少数符合条件的机构发放首批稳定币发行人牌照",
     },
     {
       date: "2025-12",
@@ -218,7 +224,7 @@ export const zhCN = {
     },
     {
       date: "2025-10",
-      title: "70+稳定币意向申请",
+      title: "70多份稳定币意向申请",
       description:
         "HKMA收到超过70份稳定币发行人意向表达，强调需有可行商业模式",
     },
@@ -245,14 +251,19 @@ export const zhCN = {
     },
     {
       date: "2024-02",
-      title: "首批代币化绿色债券发行",
-      description: "香港政府发行全球首批代币化绿色债券，规模8亿港元",
+      title: "第二批代币化绿色债券发行",
+      description: "香港政府发行第二批代币化绿色债券，规模约60亿港元（多币种）",
     },
     {
       date: "2023-06",
       title: "VATPs牌照制度生效",
       description:
         "虚拟资产交易平台发牌制度正式实施，所有在港运营平台须持牌",
+    },
+    {
+      date: "2023-02",
+      title: "全球首只政府代币化绿色债券发行",
+      description: "香港政府发行全球首只代币化绿色债券，规模8亿港元",
     },
     {
       date: "2022-10",
@@ -285,7 +296,7 @@ export const zhCN = {
     privacyNote: "我们不会公开你的个人信息",
     submitButton: "提交",
     sending: "发送中…",
-    sent: "已提交，谢谢！",
+    sent: "已打开邮件客户端，请确认发送。谢谢！",
     error: "提交失败，请稍后重试或直接发邮件给我们。",
     directEmail: "也可以直接发邮件到 414628016@qq.com",
   },
@@ -306,10 +317,6 @@ export const zhCN = {
     {
       name: "香港财政司司长办公室",
       url: "https://www.fso.gov.hk",
-    },
-    {
-      name: "Atlantic Council CBDC Tracker",
-      url: "https://www.atlanticcouncil.org/cbdctracker/",
     },
     {
       name: "新加坡金管局 (MAS)",

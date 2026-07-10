@@ -38,7 +38,7 @@ export const zhTW = {
     subtitle:
       "香港 vs 新加坡 vs 迪拜 — 三大關鍵領域橫向對比",
     dataSource:
-      "數據來源：Atlantic Council / OMFIF Tracker + MAS官網 + VARA公開資訊",
+      "數據來源：SFC / HKMA 官方資訊 + MAS官網 + VARA公開資訊",
     headers: {
       area: "領域",
       hongKong: "香港",
@@ -86,9 +86,9 @@ export const zhTW = {
           description: ["穩定幣發行人監管框架條例正式生效"],
         },
         {
-          date: "2026-01",
+          date: "2026-04",
           description: [
-            "首批穩定幣發行人牌照開始發放（高門檻，僅少數獲批）",
+            "HKMA發放首批穩定幣發行人牌照（Anchorpoint、匯豐，高門檻僅少數獲批）",
           ],
         },
         {
@@ -96,7 +96,7 @@ export const zhTW = {
           description: ["託管服務與數字資產交易商新規正在推進立法"],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-07-10",
     },
     {
       id: "rwa",
@@ -107,9 +107,15 @@ export const zhTW = {
         "香港在RWA代幣化方面領先新加坡和迪拜，政府直接參與發行屬全球罕見",
       milestones: [
         {
+          date: "2023-02",
+          description: [
+            "香港政府發行全球首隻代幣化綠色債券，規模8億港元",
+          ],
+        },
+        {
           date: "2024-02",
           description: [
-            "香港政府成功發行首批代幣化綠色債券，規模8億港元",
+            "香港政府發行第二批代幣化綠色債券，規模約60億港元（多幣種）",
           ],
         },
         {
@@ -137,13 +143,13 @@ export const zhTW = {
           ],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-07-10",
     },
     {
       id: "stablecoins",
       name: "穩定幣",
       description:
-        "穩定幣監管框架已落地，發行人牌照開始發放，但市場規模和生態仍處於早期發展階段。",
+        "穩定幣監管框架已落地，發行人牌照已開始發放，但市場規模和生態仍處於早期發展階段。",
       globalComparison:
         "新加坡MAS穩定幣框架2023年已先行落地；迪拜對穩定幣態度開放但監管細則仍在完善",
       milestones: [
@@ -162,17 +168,17 @@ export const zhTW = {
         {
           date: "2025-10",
           description: [
-            "HKMA收到70+ expressions of interest，強調需有可行商業模式",
+            "HKMA收到70多份穩定幣發行人意向表達，強調需有可行商業模式",
           ],
         },
         {
-          date: "2026-01",
+          date: "2026-04",
           description: [
-            "首批穩定幣發行人牌照開始發放，門檻較高，僅少數機構獲批",
+            "HKMA發放首批穩定幣發行人牌照（Anchorpoint、匯豐），門檻較高僅少數機構獲批",
           ],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-07-10",
     },
   ],
 
@@ -191,7 +197,7 @@ export const zhTW = {
     },
     {
       area: "穩定幣",
-      hongKong: "發展中 — 條例生效，首批牌照剛發放",
+      hongKong: "發展中 — 條例生效，首批牌照已發放",
       singapore: "積極推進 — 監管框架先行，市場活躍度較高",
       dubai: "發展中 — 態度開放，監管細則待完善",
     },
@@ -205,16 +211,16 @@ export const zhTW = {
         "虛擬資產託管服務和數字資產交易商新規正在推進立法",
     },
     {
+      date: "2026-04",
+      title: "首批穩定幣牌照發放",
+      description:
+        "HKMA向Anchorpoint與匯豐發放首批穩定幣發行人牌照",
+    },
+    {
       date: "2026-03",
       title: "首隻房地產RWA產品獲批",
       description:
         "SFC批准首隻房地產代幣化產品及商品RWA基金",
-    },
-    {
-      date: "2026-01",
-      title: "首批穩定幣牌照發放",
-      description:
-        "HKMA向少數符合條件的機構發放首批穩定幣發行人牌照",
     },
     {
       date: "2025-12",
@@ -224,7 +230,7 @@ export const zhTW = {
     },
     {
       date: "2025-10",
-      title: "70+穩定幣意向申請",
+      title: "70多份穩定幣意向申請",
       description:
         "HKMA收到超過70份穩定幣發行人意向表達，強調需有可行商業模式",
     },
@@ -254,15 +260,21 @@ export const zhTW = {
     },
     {
       date: "2024-02",
-      title: "首批代幣化綠色債券發行",
+      title: "第二批代幣化綠色債券發行",
       description:
-        "香港政府發行全球首批代幣化綠色債券，規模8億港元",
+        "香港政府發行第二批代幣化綠色債券，規模約60億港元（多幣種）",
     },
     {
       date: "2023-06",
       title: "VATPs牌照制度生效",
       description:
         "虛擬資產交易平台發牌制度正式實施，所有在港運營平台須持牌",
+    },
+    {
+      date: "2023-02",
+      title: "全球首隻政府代幣化綠色債券發行",
+      description:
+        "香港政府發行全球首隻代幣化綠色債券，規模8億港元",
     },
     {
       date: "2022-10",
@@ -295,7 +307,7 @@ export const zhTW = {
     privacyNote: "我們不會公開你的個人資訊",
     submitButton: "提交",
     sending: "發送中…",
-    sent: "已提交，謝謝！",
+    sent: "已打開郵件客戶端，請確認發送。謝謝！",
     error: "提交失敗，請稍後重試或直接發郵件給我們。",
     directEmail: "也可以直接發郵件到 414628016@qq.com",
   },
@@ -305,10 +317,6 @@ export const zhTW = {
     { name: "香港金融管理局 (HKMA)", url: "https://www.hkma.gov.hk" },
     { name: "香港政府新聞網", url: "https://www.news.gov.hk" },
     { name: "香港財政司司長辦公室", url: "https://www.fso.gov.hk" },
-    {
-      name: "Atlantic Council CBDC Tracker",
-      url: "https://www.atlanticcouncil.org/cbdctracker/",
-    },
     { name: "新加坡金管局 (MAS)", url: "https://www.mas.gov.sg" },
     {
       name: "迪拜虛擬資產監管局 (VARA)",

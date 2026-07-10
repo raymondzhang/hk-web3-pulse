@@ -2,6 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import { ExternalLink, BookOpen, Shield, Mail } from "lucide-react";
 import type { Dictionary } from "@/lib/dictionary";
 import type { DataSource } from "@/types";
+import { FEEDBACK_EMAIL } from "@/lib/contact";
 
 interface SourcesSectionProps {
   t: Dictionary;
@@ -60,7 +61,10 @@ export function SourcesSection({ t, sources, methodology, disclaimer }: SourcesS
           </div>
           <div className="flex items-center gap-2 text-xs text-slate-500">
             <Mail className="h-3.5 w-3.5" />
-            <a href="mailto:feedback@hkweb3pulse.com" className="hover:text-emerald-400 transition-colors">
+            <a
+              href={`mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent("[HK Web3 Pulse 反馈]")}`}
+              className="hover:text-emerald-400 transition-colors"
+            >
               {t.footer.reportError}
             </a>
           </div>

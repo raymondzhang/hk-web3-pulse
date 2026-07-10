@@ -12,6 +12,7 @@ interface LikeButtonProps {
 export function LikeButton({ domainId, label, likedLabel }: LikeButtonProps) {
   const [count, setCount] = useState(0);
   const [liked, setLiked] = useState(false);
+  const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
     try {
@@ -22,6 +23,7 @@ export function LikeButton({ domainId, label, likedLabel }: LikeButtonProps) {
     } catch {
       // ignore
     }
+    setHydrated(true);
   }, [domainId]);
 
   const handleLike = useCallback(() => {
@@ -44,10 +46,22 @@ export function LikeButton({ domainId, label, likedLabel }: LikeButtonProps) {
     }
   }, [domainId, count, liked]);
 
+  // Avoid flashing a bare "0" before localStorage hydrates
+  const displayText = !hydrated
+    ? label
+    : liked
+      ? `${likedLabel}${count > 0 ? ` · ${count}` : ""}`
+      : count > 0
+        ? `${label} · ${count}`
+        : label;
+
   return (
     <button
+      type="button"
       onClick={handleLike}
       disabled={liked}
+      aria-label={liked ? likedLabel : label}
+      aria-pressed={liked}
       className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 border ${
         liked
           ? "bg-emerald-50 text-emerald-700 border-emerald-200 cursor-default"
@@ -56,7 +70,7 @@ export function LikeButton({ domainId, label, likedLabel }: LikeButtonProps) {
       title={liked ? likedLabel : label}
     >
       <ThumbsUp className={`h-3.5 w-3.5 ${liked ? "fill-emerald-500 text-emerald-500" : ""}`} />
-      <span>{count}</span>
+      <span>{displayText}</span>
     </button>
   );
 }
