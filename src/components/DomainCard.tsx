@@ -7,6 +7,7 @@ import type { StatusLevel } from "@/types";
 
 interface LocaleDomain {
   id: string;
+  status: StatusLevel;
   name: string;
   description: string;
   globalComparison: string;
@@ -19,18 +20,11 @@ interface DomainCardProps {
   domain: LocaleDomain;
 }
 
-/** Map domain id to its status level */
-const domainStatus: Record<string, StatusLevel> = {
-  regulation: "Advancing",
-  rwa: "Advancing",
-  stablecoins: "Developing",
-};
-
 const statusConfig: Record<StatusLevel, { color: string; textColor: string; bgLight: string }> = {
-  Leading: { color: "bg-emerald-500", textColor: "text-emerald-700", bgLight: "bg-emerald-50" },
-  Advancing: { color: "bg-emerald-500", textColor: "text-emerald-700", bgLight: "bg-emerald-50" },
-  Developing: { color: "bg-amber-500", textColor: "text-amber-700", bgLight: "bg-amber-50" },
-  Emerging: { color: "bg-slate-400", textColor: "text-slate-600", bgLight: "bg-slate-50" },
+  Leading: { color: "bg-emerald-500", textColor: "text-emerald-700 dark:text-emerald-400", bgLight: "bg-emerald-50 dark:bg-emerald-900/30" },
+  Advancing: { color: "bg-emerald-500", textColor: "text-emerald-700 dark:text-emerald-400", bgLight: "bg-emerald-50 dark:bg-emerald-900/30" },
+  Developing: { color: "bg-amber-500", textColor: "text-amber-700 dark:text-amber-400", bgLight: "bg-amber-50 dark:bg-amber-900/30" },
+  Emerging: { color: "bg-slate-400", textColor: "text-slate-600 dark:text-slate-400", bgLight: "bg-slate-50 dark:bg-slate-800" },
 };
 
 const progressWidth: Record<StatusLevel, string> = {
@@ -45,15 +39,15 @@ function normalizeDescription(desc: string | string[]): string {
 }
 
 export function DomainCard({ t, domain }: DomainCardProps) {
-  const status = domainStatus[domain.id] ?? "Emerging";
+  const status = domain.status ?? "Emerging";
   const config = statusConfig[status];
   const label = t.statusLabels[status];
 
   return (
-    <Card className="h-full border-slate-200 hover:shadow-md transition-shadow">
+    <Card className="h-full border-slate-200 dark:border-slate-700 dark:bg-slate-800 hover:shadow-md transition-shadow">
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between">
-          <CardTitle className="text-lg font-semibold text-slate-900">
+          <CardTitle className="text-lg font-semibold text-slate-900 dark:text-slate-100">
             {domain.name}
           </CardTitle>
           <Badge className={`${config.bgLight} ${config.textColor} border-0 text-xs font-medium`}>
@@ -65,18 +59,18 @@ export function DomainCard({ t, domain }: DomainCardProps) {
             likedLabel={t.likeButton.liked}
           />
         </div>
-        <p className="text-sm text-slate-600 mt-1.5 leading-relaxed">
+        <p className="text-sm text-slate-600 dark:text-slate-400 mt-1.5 leading-relaxed">
           {domain.description}
         </p>
       </CardHeader>
       <CardContent className="space-y-4">
         {/* Progress bar */}
         <div className="space-y-1.5">
-          <div className="flex justify-between text-xs text-slate-500">
+          <div className="flex justify-between text-xs text-slate-500 dark:text-slate-400">
             <span>{t.domains.sections.milestones}</span>
             <span>{label}</span>
           </div>
-          <div className="h-2 w-full bg-slate-100 rounded-full overflow-hidden">
+          <div className="h-2 w-full bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
             <div
               className={`h-full ${config.color} rounded-full transition-all`}
               style={{ width: progressWidth[status] }}
@@ -86,17 +80,17 @@ export function DomainCard({ t, domain }: DomainCardProps) {
 
         {/* Milestones */}
         <div className="space-y-2.5">
-          <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+          <h4 className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
             {t.domains.sections.milestones}
           </h4>
           <ul className="space-y-2">
             {domain.milestones.map((milestone, idx) => (
               <li key={idx} className="text-sm">
                 <div className="flex items-start gap-2">
-                  <span className="text-xs font-mono text-slate-400 shrink-0 mt-0.5">
+                  <span className="text-xs font-mono text-slate-400 dark:text-slate-500 shrink-0 mt-0.5">
                     {milestone.date}
                   </span>
-                  <span className="text-slate-700 leading-relaxed">
+                  <span className="text-slate-700 dark:text-slate-300 leading-relaxed">
                     {normalizeDescription(milestone.description)}
                   </span>
                 </div>
@@ -106,18 +100,18 @@ export function DomainCard({ t, domain }: DomainCardProps) {
         </div>
 
         {/* Global Comparison */}
-        <div className="pt-3 border-t border-slate-100">
+        <div className="pt-3 border-t border-slate-100 dark:border-slate-700">
           <div className="flex items-start gap-2">
-            <Globe className="h-4 w-4 text-slate-400 mt-0.5 shrink-0" />
-            <p className="text-xs text-slate-500 leading-relaxed">
-              <span className="font-medium text-slate-600">{t.domains.sections.globalComparison}：</span>
+            <Globe className="h-4 w-4 text-slate-400 dark:text-slate-500 mt-0.5 shrink-0" />
+            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              <span className="font-medium text-slate-600 dark:text-slate-300">{t.domains.sections.globalComparison}：</span>
               {domain.globalComparison}
             </p>
           </div>
         </div>
 
         {/* Last Updated */}
-        <div className="flex items-center gap-1.5 text-xs text-slate-400">
+        <div className="flex items-center gap-1.5 text-xs text-slate-400 dark:text-slate-500">
           <Calendar className="h-3 w-3" />
           <span>{t.domains.sections.lastUpdated} {domain.lastUpdated}</span>
         </div>

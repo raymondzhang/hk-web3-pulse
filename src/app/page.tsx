@@ -1,5 +1,6 @@
 import { Activity, BarChart3, Shield } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { OverallStatus } from "@/components/OverallStatus";
 import { DomainCard } from "@/components/DomainCard";
 import { ComparisonTable } from "@/components/ComparisonTable";
@@ -8,18 +9,19 @@ import { SourcesSection } from "@/components/SourcesSection";
 import { FeedbackForm } from "@/components/FeedbackForm";
 import { getLocale } from "@/lib/locale-server";
 import { getDictionary } from "@/lib/dictionary";
+import { getDarkMode } from "@/lib/theme-server";
 import { hkWeb3Data } from "@/data";
 
 export default async function Home() {
   const locale = await getLocale();
   const t = getDictionary(locale);
-  // Use locale-specific data for translated content; JSON only for language-independent fields
+  const dark = await getDarkMode();
   const data = hkWeb3Data;
 
   return (
     <main className="min-h-full flex flex-col">
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+      <section className="w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
             <div className="max-w-3xl">
@@ -46,8 +48,9 @@ export default async function Home() {
                 </div>
               </div>
             </div>
-            <div className="shrink-0">
+            <div className="shrink-0 flex items-center gap-3">
               <LanguageSwitcher currentLocale={locale} />
+              <ThemeToggle initialDark={dark} />
             </div>
           </div>
         </div>
@@ -60,13 +63,13 @@ export default async function Home() {
         lastUpdated={data.lastUpdated}
       />
 
-      {/* Domain Cards — uses locale-specific translated data */}
-      <section className="w-full bg-slate-50">
+      {/* Domain Cards */}
+      <section className="w-full bg-slate-50 dark:bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h2 className="text-xl font-semibold text-slate-900 mb-2">
+          <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2">
             {t.domains.title}
           </h2>
-          <p className="text-sm text-slate-500 mb-8">{t.domains.subtitle}</p>
+          <p className="text-sm text-slate-500 dark:text-slate-400 mb-8">{t.domains.subtitle}</p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {t.domainData.map((domain) => (
               <DomainCard key={domain.id} t={t} domain={domain} />
@@ -75,24 +78,24 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Comparison Table — uses locale-specific translated data */}
+      {/* Comparison Table */}
       <ComparisonTable t={t} data={t.comparisonData} />
 
-      {/* Timeline — uses locale-specific translated data */}
+      {/* Timeline */}
       <Timeline t={t} events={t.timelineData} />
 
       {/* Feedback Form */}
-      <section className="w-full bg-slate-50">
+      <section className="w-full bg-slate-50 dark:bg-slate-900">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h2 className="text-xl font-semibold text-slate-900 mb-2">
+          <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2">
             {t.feedback.title}
           </h2>
-          <p className="text-sm text-slate-500 mb-8">{t.feedback.subtitle}</p>
+          <p className="text-sm text-slate-500 dark:text-slate-400 mb-8">{t.feedback.subtitle}</p>
           <FeedbackForm t={t} />
         </div>
       </section>
 
-      {/* Sources & Footer — uses locale-specific translated data */}
+      {/* Sources & Footer */}
       <SourcesSection
         t={t}
         sources={t.sources}

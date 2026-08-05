@@ -24,52 +24,55 @@ export function FeedbackForm({ t }: FeedbackFormProps) {
     );
 
     window.location.href = `mailto:414628016@qq.com?subject=${subject}&body=${body}`;
-    setSent(true);
-    form.reset();
+    
+    setTimeout(() => {
+      setSent(true);
+      form.reset();
+    }, 500);
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-medium text-slate-600 mb-1.5">
+          <label className="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1.5">
             {t.feedback.nameLabel}
           </label>
           <input
             type="text"
             name="name"
-            className="w-full px-3 py-2 text-sm rounded-lg border border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-400 transition-colors"
+            className="w-full px-3 py-2 text-sm rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-400 transition-colors"
             placeholder={t.feedback.namePlaceholder}
           />
         </div>
         <div>
-          <label className="block text-xs font-medium text-slate-600 mb-1.5">
+          <label className="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1.5">
             {t.feedback.emailLabel}
           </label>
           <input
             type="email"
             name="email"
-            className="w-full px-3 py-2 text-sm rounded-lg border border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-400 transition-colors"
+            className="w-full px-3 py-2 text-sm rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-400 transition-colors"
             placeholder={t.feedback.emailPlaceholder}
           />
         </div>
       </div>
       <div>
-        <label className="block text-xs font-medium text-slate-600 mb-1.5">
+        <label className="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1.5">
           {t.feedback.messageLabel}
         </label>
         <textarea
           name="message"
           rows={4}
           required
-          className="w-full px-3 py-2 text-sm rounded-lg border border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-400 transition-colors resize-none"
+          className="w-full px-3 py-2 text-sm rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-400 transition-colors resize-none"
           placeholder={t.feedback.messagePlaceholder}
         />
       </div>
       <div className="flex items-center justify-between">
-        <p className="text-xs text-slate-400">{t.feedback.privacyNote}</p>
+        <p className="text-xs text-slate-400 dark:text-slate-500">{t.feedback.privacyNote}</p>
         {sent ? (
-          <span className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-emerald-600">
+          <span className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-emerald-600 dark:text-emerald-400">
             <CheckCircle className="h-3.5 w-3.5" />
             {t.feedback.sent}
           </span>
@@ -83,7 +86,7 @@ export function FeedbackForm({ t }: FeedbackFormProps) {
           </button>
         )}
       </div>
-      <div className="flex items-center gap-1.5 text-xs text-slate-400 pt-2 border-t border-slate-100">
+      <div className="flex items-center gap-1.5 text-xs text-slate-400 dark:text-slate-500 pt-2 border-t border-slate-100 dark:border-slate-800">
         <Mail className="h-3 w-3" />
         <span>
           {t.feedback.directEmail}

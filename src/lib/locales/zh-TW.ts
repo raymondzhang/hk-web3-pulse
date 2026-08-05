@@ -69,6 +69,7 @@ export const zhTW = {
   domainData: [
     {
       id: "regulation",
+      status: "Advancing" as const,
       name: "監管與牌照",
       description:
         "香港證監會（SFC）和香港金管局（HKMA）建立了較為完善的虛擬資產監管框架，VATPs牌照制度持續優化。",
@@ -92,14 +93,23 @@ export const zhTW = {
           ],
         },
         {
-          date: "2026-Q2",
-          description: ["託管服務與數字資產交易商新規正在推進立法"],
+          date: "2026-04",
+          description: [
+            "SFC發布代幣化債券二級市場交易框架，允許零售投資者參與代幣化債券交易",
+          ],
+        },
+        {
+          date: "2026-06",
+          description: [
+            "SFC發布《相關穩定幣》服務通告，明確虛擬資產交易平台提供穩定幣服務的監管要求",
+          ],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-08-05",
     },
     {
       id: "rwa",
+      status: "Advancing" as const,
       name: "RWA代幣化",
       description:
         "香港在真實世界資產（RWA）代幣化領域處於全球領先地位，政府和監管機構積極推動。",
@@ -136,11 +146,20 @@ export const zhTW = {
             "SFC批准首隻房地產代幣化產品及商品RWA基金",
           ],
         },
+        {
+          date: "2026-04",
+          description: ["代幣化產品二級市場向零售投資者開放，零售投資者可參與購買代幣化債券"],
+        },
+        {
+          date: "2026-04",
+          description: ["香港Web3 Festival 2026舉辦（4月20-23日），匯聚全球Web3生態參與者"],
+        },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-08-05",
     },
     {
       id: "stablecoins",
+      status: "Developing" as const,
       name: "穩定幣",
       description:
         "穩定幣監管框架已落地，發行人牌照開始發放，但市場規模和生態仍處於早期發展階段。",
@@ -166,13 +185,19 @@ export const zhTW = {
           ],
         },
         {
-          date: "2026-01",
+          date: "2026-04",
           description: [
-            "首批穩定幣發行人牌照開始發放，門檻較高，僅少數機構獲批",
+            "HKMA正式發放首批穩定幣發行人牌照：匯豐銀行及Anchorpoint Financial（渣打銀行與安擬集團合資）獲批",
+          ],
+        },
+        {
+          date: "2026-06",
+          description: [
+            "HKMA放寬持牌穩定幣發行人要求，降低合規門檻以吸引更多機構申請",
           ],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-08-05",
     },
   ],
 
@@ -191,13 +216,33 @@ export const zhTW = {
     },
     {
       area: "穩定幣",
-      hongKong: "發展中 — 條例生效，首批牌照剛發放",
+      hongKong: "積極推進 — 首批牌照正式發放（匯豐、Anchorpoint），監管要求持續放寬",
       singapore: "積極推進 — 監管框架先行，市場活躍度較高",
       dubai: "發展中 — 態度開放，監管細則待完善",
     },
   ],
 
   timelineData: [
+    {
+      date: "2026-06",
+      title: "HKMA放寬穩定幣監管要求",
+      description: "金管局放寬持牌穩定幣發行人的合規要求，降低準入門檻以鼓勵更多機構參與",
+    },
+    {
+      date: "2026-04",
+      title: "SFC代幣化債券二級市場框架",
+      description: "證監會發布新框架，允許持牌平台向零售投資者提供代幣化債券交易，為全球首個明確監管",
+    },
+    {
+      date: "2026-04",
+      title: "首批穩定幣牌照正式發放",
+      description: "匯豐銀行及Anchorpoint Financial獲HKMA批准成為首批正式持牌穩定幣發行人",
+    },
+    {
+      date: "2026-04",
+      title: "Web3 Festival 2026",
+      description: "香港Web3 Festival 2026舉辦，代幣化二級市場向零售投資者開放",
+    },
     {
       date: "2026-Q2",
       title: "託管與交易商新規推進",

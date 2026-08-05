@@ -73,6 +73,7 @@ export const en = {
   domainData: [
     {
       id: "regulation",
+      status: "Advancing" as const,
       name: "Regulation & Licensing",
       description:
         "The SFC and HKMA have established a comprehensive virtual asset regulatory framework, with the VATP licensing regime continuing to be refined.",
@@ -98,16 +99,23 @@ export const en = {
           ],
         },
         {
-          date: "2026-Q2",
+          date: "2026-04",
           description: [
-            "New regulations for custody services and digital asset dealers advancing through legislation",
+            "SFC released new framework allowing tokenized bond trading on licensed platforms, opening to retail investors",
+          ],
+        },
+        {
+          date: "2026-06",
+          description: [
+            "SFC issued circular on Relevant Stablecoin services, clarifying regulatory requirements for VATPs offering stablecoin services",
           ],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-08-05",
     },
     {
       id: "rwa",
+      status: "Advancing" as const,
       name: "RWA / Tokenization",
       description:
         "Hong Kong is a global leader in real-world asset (RWA) tokenization, with active promotion from both the government and regulators.",
@@ -145,10 +153,11 @@ export const en = {
           ],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-08-05",
     },
     {
       id: "stablecoins",
+      status: "Developing" as const,
       name: "Stablecoins",
       description:
         "The stablecoin regulatory framework has been enacted and issuer licenses are being granted, but market size and ecosystem remain in early development.",
@@ -180,7 +189,7 @@ export const en = {
           ],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-08-05",
     },
   ],
 
@@ -199,13 +208,33 @@ export const en = {
     },
     {
       area: "Stablecoins",
-      hongKong: "Developing — Ordinance in effect; first batch of licenses just issued",
+      hongKong: "Advancing — First licenses officially granted (HSBC, Anchorpoint); requirements being relaxed",
       singapore: "Advancing — Regulatory framework was enacted first; higher market activity",
       dubai: "Developing — Open stance; detailed regulations still being refined",
     },
   ],
 
   timelineData: [
+    {
+      date: "2026-06",
+      title: "HKMA Relaxes Stablecoin Requirements",
+      description: "HKMA relaxed compliance requirements for licensed stablecoin issuers, lowering barriers to encourage more institutional participation",
+    },
+    {
+      date: "2026-04",
+      title: "SFC Tokenized Bond Secondary Market Framework",
+      description: "SFC released new framework allowing licensed platforms to offer tokenized bond trading to retail investors, first explicit regulation globally",
+    },
+    {
+      date: "2026-04",
+      title: "First Stablecoin Licenses Officially Granted",
+      description: "HSBC and Anchorpoint Financial approved by HKMA as first officially licensed stablecoin issuers",
+    },
+    {
+      date: "2026-04",
+      title: "Web3 Festival 2026",
+      description: "Hong Kong Web3 Festival 2026 held; tokenized secondary market opened to retail investors",
+    },
     {
       date: "2026-Q2",
       title: "Custody & Dealer New Regulations Advancing",

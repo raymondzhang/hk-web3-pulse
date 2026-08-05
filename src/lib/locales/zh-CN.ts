@@ -69,6 +69,7 @@ export const zhCN = {
   domainData: [
     {
       id: "regulation",
+      status: "Advancing" as const,
       name: "监管与牌照",
       description:
         "香港证监会（SFC）和香港金管局（HKMA）建立了较为完善的虚拟资产监管框架，VATPs牌照制度持续优化。",
@@ -96,10 +97,11 @@ export const zhCN = {
           description: ["托管服务与数字资产交易商新规正在推进立法"],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-08-05",
     },
     {
       id: "rwa",
+      status: "Advancing" as const,
       name: "RWA代币化",
       description:
         "香港在真实世界资产（RWA）代币化领域处于全球领先地位，政府和监管机构积极推动。",
@@ -134,11 +136,20 @@ export const zhCN = {
           date: "2026-03",
           description: ["SFC批准首只房地产代币化产品及商品RWA基金"],
         },
+        {
+          date: "2026-04",
+          description: ["代币化产品二级市场向零售投资者开放，零售投资者可参与购买代币化债券"],
+        },
+        {
+          date: "2026-04",
+          description: ["香港Web3 Festival 2026举办（4月20-23日），汇聚全球Web3生态参与者"],
+        },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-08-05",
     },
     {
       id: "stablecoins",
+      status: "Developing" as const,
       name: "稳定币",
       description:
         "稳定币监管框架已落地，发行人牌照开始发放，但市场规模和生态仍处于早期发展阶段。",
@@ -164,13 +175,19 @@ export const zhCN = {
           ],
         },
         {
-          date: "2026-01",
+          date: "2026-04",
           description: [
-            "首批稳定币发行人牌照开始发放，门槛较高，仅少数机构获批",
+            "HKMA正式发放首批稳定币发行人牌照：汇丰银行及Anchorpoint Financial（渣打银行与安拟集团合资）获批",
+          ],
+        },
+        {
+          date: "2026-06",
+          description: [
+            "HKMA放宽持牌稳定币发行人要求，降低合规门槛以吸引更多机构申请",
           ],
         },
       ],
-      lastUpdated: "2026-07-06",
+      lastUpdated: "2026-08-05",
     },
   ],
 
@@ -189,13 +206,33 @@ export const zhCN = {
     },
     {
       area: "稳定币",
-      hongKong: "发展中 — 条例生效，首批牌照刚发放",
+      hongKong: "积极推进 — 首批牌照正式发放（汇丰、Anchorpoint），监管要求持续放宽",
       singapore: "积极推进 — 监管框架先行，市场活跃度较高",
       dubai: "发展中 — 态度开放，监管细则待完善",
     },
   ],
 
   timelineData: [
+    {
+      date: "2026-06",
+      title: "HKMA放宽稳定币监管要求",
+      description: "金管局放宽持牌稳定币发行人的合规要求，降低准入门槛以鼓励更多机构参与",
+    },
+    {
+      date: "2026-04",
+      title: "SFC代币化债券二级市场框架",
+      description: "证监会发布新框架，允许持牌平台向零售投资者提供代币化债券交易，为全球首个明确监管",
+    },
+    {
+      date: "2026-04",
+      title: "首批稳定币牌照正式发放",
+      description: "汇丰银行及Anchorpoint Financial获HKMA批准成为首批正式持牌稳定币发行人",
+    },
+    {
+      date: "2026-04",
+      title: "Web3 Festival 2026",
+      description: "香港Web3 Festival 2026举办，代币化二级市场向零售投资者开放",
+    },
     {
       date: "2026-Q2",
       title: "托管与交易商新规推进",

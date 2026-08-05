@@ -2,19 +2,8 @@ export type StatusLevel = "Leading" | "Advancing" | "Developing" | "Emerging";
 
 export interface Milestone {
   date: string;
-  description: string;
-  source: string;
-}
-
-export interface Domain {
-  id: string;
-  name: string;
-  status: StatusLevel;
-  color: string;
-  description: string;
-  milestones: Milestone[];
-  globalComparison: string;
-  lastUpdated: string;
+  description: string | string[];
+  source?: string;
 }
 
 export interface ComparisonRow {
@@ -39,11 +28,4 @@ export interface DataSource {
 export interface HKWeb3Data {
   lastUpdated: string;
   overallStatus: StatusLevel;
-  overallDescription: string;
-  domains: Domain[];
-  comparison: ComparisonRow[];
-  timeline: TimelineEvent[];
-  sources: DataSource[];
-  methodology: string;
-  disclaimer: string;
 }
