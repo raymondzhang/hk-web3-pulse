@@ -7,6 +7,7 @@ import { RwaTopProjects } from "@/components/rwa/RwaTopProjects";
 import { RwaStockSection } from "@/components/rwa/RwaStockSection";
 import { RwaChainDistribution } from "@/components/rwa/RwaChainDistribution";
 import { RwaHkSection } from "@/components/rwa/RwaHkSection";
+import { RwaHkDisclosure } from "@/components/rwa/RwaHkDisclosure";
 import { RwaTrends } from "@/components/rwa/RwaTrends";
 import { SourcesSection } from "@/components/SourcesSection";
 import { getLocale } from "@/lib/locale-server";
@@ -85,6 +86,11 @@ export default async function RwaPage() {
 
       {/* HK Section */}
       <RwaHkSection t={t} hk={data.hkSpecific} />
+
+      {/* HK Disclosure — On-chain Trading Info */}
+      {data.hkSpecific.disclosure && (
+        <RwaHkDisclosure t={t} disclosure={data.hkSpecific.disclosure} />
+      )}
 
       {/* Trends */}
       <RwaTrends t={t} trends={data.trends} />

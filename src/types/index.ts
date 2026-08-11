@@ -134,6 +134,7 @@ export interface RwaHkSpecific {
   hkProducts: RwaHkProduct[];
   regulatoryAccess: RwaRegulatoryAccess;
   globalVsHk: RwaGlobalVsHk;
+  disclosure?: RwaHkDisclosure;
 }
 
 export interface RwaTrend {
@@ -154,4 +155,52 @@ export interface RwaMarketData {
   chainDistribution: RwaChainEntry[];
   hkSpecific: RwaHkSpecific;
   trends: RwaTrend[];
+}
+
+// ─── HK RWA Disclosure Types ──────────────────────────────────────────────
+
+export interface RwaOnchainToken {
+  name: string;
+  symbol: string;
+  chain: string;
+  contractAddress: string;
+  totalSupply: string;
+  holders?: number;
+  transfers24h?: number;
+  price?: number;
+  priceUnit?: string;
+  liquidity?: string;
+  note: string;
+  hkRelevance: HkRelevance;
+}
+
+export interface RwaComplianceEntry {
+  productName: string;
+  issuer: string;
+  sfcStatus: "authorized" | "pending" | "rejected" | "not-applicable";
+  sfcRef?: string;
+  vatpAvailability: string[];
+  investorType: "retail" | "pi-only" | "institutional";
+  restrictions: string;
+  launchDate: string;
+  note: string;
+}
+
+export interface RwaLiquidityEntry {
+  token: string;
+  dex: string;
+  pair: string;
+  tvl: string;
+  volume24h: string;
+  price: string;
+  priceChange24h?: string;
+  chain: string;
+}
+
+export interface RwaHkDisclosure {
+  lastUpdated: string;
+  onchainTokens: RwaOnchainToken[];
+  compliance: RwaComplianceEntry[];
+  liquidity: RwaLiquidityEntry[];
+  dataSources: { name: string; url: string }[];
 }

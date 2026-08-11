@@ -19,7 +19,13 @@
       "icon": "🥇",
       "tvl": 15.0,
       "percent": 54,
-      "examples": ["Blackrock BUIDL", "Circle USYC", "Ondo USDY", "Spiko", "Anemoy"],
+      "examples": [
+        "Blackrock BUIDL",
+        "Circle USYC",
+        "Ondo USDY",
+        "Spiko",
+        "Anemoy"
+      ],
       "hkRelevance": "medium",
       "hkNote": "美债代币化产品全球可买，但香港散户受 SFC 合规限制无法直接购买多数链上产品"
     },
@@ -29,7 +35,11 @@
       "icon": "🥈",
       "tvl": 5.2,
       "percent": 19,
-      "examples": ["Tether Gold (XAUt)", "Paxos Gold (PAXG)", "MatrixDock XAUM"],
+      "examples": [
+        "Tether Gold (XAUt)",
+        "Paxos Gold (PAXG)",
+        "MatrixDock XAUM"
+      ],
       "hkRelevance": "high",
       "hkNote": "PAXG、XAUt 已在 HashKey 等持牌平台上线，香港对实物黄金代币接受度高"
     },
@@ -39,7 +49,11 @@
       "icon": "🥉",
       "tvl": 2.5,
       "percent": 9,
-      "examples": ["Ondo Global Markets", "xStocks", "Blockchain Capital"],
+      "examples": [
+        "Ondo Global Markets",
+        "xStocks",
+        "Blockchain Capital"
+      ],
       "hkRelevance": "low",
       "hkNote": "Robinhood、xStocks 均未获 SFC 牌照，香港散户无法合法使用。此增长在香港不可复制"
     },
@@ -49,7 +63,11 @@
       "icon": "4",
       "tvl": 2.4,
       "percent": 9,
-      "examples": ["Centrifuge", "Apollo (Securitize)", "Figure Markets"],
+      "examples": [
+        "Centrifuge",
+        "Apollo (Securitize)",
+        "Figure Markets"
+      ],
       "hkRelevance": "high",
       "hkNote": "Centrifuge 等产品在亚太几乎没有存在感，香港同样适用降温趋势"
     },
@@ -59,7 +77,11 @@
       "icon": "5",
       "tvl": 0.8,
       "percent": 3,
-      "examples": ["Hastra", "R25", "Mantle Index Four"],
+      "examples": [
+        "Hastra",
+        "R25",
+        "Mantle Index Four"
+      ],
       "hkRelevance": "medium",
       "hkNote": ""
     },
@@ -69,7 +91,11 @@
       "icon": "6",
       "tvl": 0.5,
       "percent": 2,
-      "examples": ["RE Protocol", "RealT", "Lofty"],
+      "examples": [
+        "RE Protocol",
+        "RealT",
+        "Lofty"
+      ],
       "hkRelevance": "low",
       "hkNote": "香港房地产代币化法律框架不明确，几乎空白"
     },
@@ -79,7 +105,11 @@
       "icon": "7",
       "tvl": 0.3,
       "percent": 1,
-      "examples": ["T RIZE", "Stobox", "Brickken"],
+      "examples": [
+        "T RIZE",
+        "Stobox",
+        "Brickken"
+      ],
       "hkRelevance": "low",
       "hkNote": ""
     }
@@ -109,7 +139,7 @@
     },
     {
       "name": "Circle USYC",
-      "tvl": 3.00,
+      "tvl": 3.0,
       "category": "treasury",
       "issuer": "Circle / Hashnote",
       "chain": "Ethereum",
@@ -222,32 +252,171 @@
     "totalTvl": 2.5,
     "top3MarketShare": 0.865,
     "rankings": [
-      { "rank": 1, "platform": "Ondo", "stockCount": 406, "value": 873.9, "marketShare": 38.80 },
-      { "rank": 2, "platform": "Backed Finance", "stockCount": 94, "value": 577.3, "marketShare": 24.31, "distributed": 53.25 },
-      { "rank": 3, "platform": "xStocks", "stockCount": 698, "value": 554.4, "marketShare": 23.35, "distributed": 15.44 },
-      { "rank": 4, "platform": "Securitize", "stockCount": 3, "value": 255.3, "marketShare": 10.75 },
-      { "rank": 5, "platform": "Robinhood", "stockCount": 94, "value": 28.3, "marketShare": 1.19, "distributed": 129.3 },
-      { "rank": 6, "platform": "WisdomTree", "stockCount": 6, "value": 27.4, "marketShare": 1.15, "distributed": 2.53 },
-      { "rank": 7, "platform": "Figure", "stockCount": 1, "value": 23.3, "marketShare": 0.98, "distributed": 89.46 }
+      {
+        "rank": 1,
+        "platform": "Ondo",
+        "stockCount": 406,
+        "value": 873.9,
+        "marketShare": 38.8
+      },
+      {
+        "rank": 2,
+        "platform": "Backed Finance",
+        "stockCount": 94,
+        "value": 577.3,
+        "marketShare": 24.31,
+        "distributed": 53.25
+      },
+      {
+        "rank": 3,
+        "platform": "xStocks",
+        "stockCount": 698,
+        "value": 554.4,
+        "marketShare": 23.35,
+        "distributed": 15.44
+      },
+      {
+        "rank": 4,
+        "platform": "Securitize",
+        "stockCount": 3,
+        "value": 255.3,
+        "marketShare": 10.75
+      },
+      {
+        "rank": 5,
+        "platform": "Robinhood",
+        "stockCount": 94,
+        "value": 28.3,
+        "marketShare": 1.19,
+        "distributed": 129.3
+      },
+      {
+        "rank": 6,
+        "platform": "WisdomTree",
+        "stockCount": 6,
+        "value": 27.4,
+        "marketShare": 1.15,
+        "distributed": 2.53
+      },
+      {
+        "rank": 7,
+        "platform": "Figure",
+        "stockCount": 1,
+        "value": 23.3,
+        "marketShare": 0.98,
+        "distributed": 89.46
+      }
     ],
     "hkAvailability": "none",
     "hkNote": "以上所有平台均未获 SFC 牌照，香港散户无法合法参与"
   },
   "chainDistribution": [
-    { "chain": "Ethereum", "dominance": "dominant", "projects": ["BUIDL", "USYC", "Ondo", "PAXG", "Centrifuge"], "note": "RWA 绝对主战场，流动性最厚，机构首选" },
-    { "chain": "Solana", "dominance": "growing", "projects": ["xStocks", "OnRe", "Figure"], "note": "高 TPS 适合高频交易类 RWA" },
-    { "chain": "Base", "dominance": "growing", "projects": ["Mountain Protocol", "Anemoy"], "note": "Coinbase L2，合规友好" },
-    { "chain": "Arbitrum", "dominance": "growing", "projects": ["Centrifuge", "xStocks", "TrueFi"], "note": "L2 低成本" },
-    { "chain": "Polygon", "dominance": "growing", "projects": ["Centrifuge", "Mountain Protocol"], "note": "低成本 + EVM 兼容" },
-    { "chain": "Plume", "dominance": "emerging", "projects": ["Ondo Yield"], "note": "RWA 专用链（新）" },
-    { "chain": "Stellar/XRP", "dominance": "growing", "projects": ["Ondo", "Spiko"], "note": "跨境支付 + 合规框架" }
+    {
+      "chain": "Ethereum",
+      "dominance": "dominant",
+      "projects": [
+        "BUIDL",
+        "USYC",
+        "Ondo",
+        "PAXG",
+        "Centrifuge"
+      ],
+      "note": "RWA 绝对主战场，流动性最厚，机构首选"
+    },
+    {
+      "chain": "Solana",
+      "dominance": "growing",
+      "projects": [
+        "xStocks",
+        "OnRe",
+        "Figure"
+      ],
+      "note": "高 TPS 适合高频交易类 RWA"
+    },
+    {
+      "chain": "Base",
+      "dominance": "growing",
+      "projects": [
+        "Mountain Protocol",
+        "Anemoy"
+      ],
+      "note": "Coinbase L2，合规友好"
+    },
+    {
+      "chain": "Arbitrum",
+      "dominance": "growing",
+      "projects": [
+        "Centrifuge",
+        "xStocks",
+        "TrueFi"
+      ],
+      "note": "L2 低成本"
+    },
+    {
+      "chain": "Polygon",
+      "dominance": "growing",
+      "projects": [
+        "Centrifuge",
+        "Mountain Protocol"
+      ],
+      "note": "低成本 + EVM 兼容"
+    },
+    {
+      "chain": "Plume",
+      "dominance": "emerging",
+      "projects": [
+        "Ondo Yield"
+      ],
+      "note": "RWA 专用链（新）"
+    },
+    {
+      "chain": "Stellar/XRP",
+      "dominance": "growing",
+      "projects": [
+        "Ondo",
+        "Spiko"
+      ],
+      "note": "跨境支付 + 合规框架"
+    }
   ],
   "hkSpecific": {
     "vatps": [
-      { "name": "HashKey Exchange", "license": "VATP #1", "status": "licensed", "rwaTokens": ["BTC", "ETH", "PAXG"], "note": "PAXG 已上线" },
-      { "name": "OSL", "license": "VATP #2", "status": "licensed", "rwaTokens": ["Tokenized bonds pilot"], "note": "" },
-      { "name": "HKVAX", "license": "VATP #3", "status": "licensed", "rwaTokens": ["Tokenized green bonds"], "note": "" },
-      { "name": "Hibiki", "license": "VATP #4", "status": "licensed", "rwaTokens": [], "note": "" }
+      {
+        "name": "HashKey Exchange",
+        "license": "VATP #1",
+        "status": "licensed",
+        "rwaTokens": [
+          "BTC",
+          "ETH",
+          "PAXG"
+        ],
+        "note": "PAXG 已上线"
+      },
+      {
+        "name": "OSL",
+        "license": "VATP #2",
+        "status": "licensed",
+        "rwaTokens": [
+          "Tokenized bonds pilot"
+        ],
+        "note": ""
+      },
+      {
+        "name": "HKVAX",
+        "license": "VATP #3",
+        "status": "licensed",
+        "rwaTokens": [
+          "Tokenized green bonds"
+        ],
+        "note": ""
+      },
+      {
+        "name": "Hibiki",
+        "license": "VATP #4",
+        "status": "licensed",
+        "rwaTokens": [],
+        "note": ""
+      }
     ],
     "hkProducts": [
       {
@@ -316,10 +485,222 @@
       "stablecoin": "pending"
     },
     "globalVsHk": {
-      "rwaTvl": { "global": 38.2, "hk": 0.1, "unit": "B" },
-      "holders": { "global": 1700000, "hk": 5000 },
-      "tokenizedStocks": { "global": 2.5, "hk": 0, "unit": "B" },
-      "compliantChannels": { "global": 50, "hk": 4 }
+      "rwaTvl": {
+        "global": 38.2,
+        "hk": 0.1,
+        "unit": "B"
+      },
+      "holders": {
+        "global": 1700000,
+        "hk": 5000
+      },
+      "tokenizedStocks": {
+        "global": 2.5,
+        "hk": 0,
+        "unit": "B"
+      },
+      "compliantChannels": {
+        "global": 50,
+        "hk": 4
+      }
+    },
+    "disclosure": {
+      "lastUpdated": "2026-08-11",
+      "onchainTokens": [
+        {
+          "name": "MatrixDock Short-Term Bitcoin Treasury",
+          "symbol": "STBT",
+          "chain": "Ethereum",
+          "contractAddress": "0x530824DA86689C9C17CdC2871FfDa69B5EfaC869",
+          "totalSupply": "$150M",
+          "holders": 42,
+          "transfers24h": 3,
+          "price": 1.0,
+          "priceUnit": "USD",
+          "liquidity": "$2.1M",
+          "note": "SFC 授权的首个代币化国债基金，仅面向专业投资者",
+          "hkRelevance": "high"
+        },
+        {
+          "name": "Paxos Gold",
+          "symbol": "PAXG",
+          "chain": "Ethereum",
+          "contractAddress": "0x45804880De22913dAFE09f4980848ECE6EcbAf78",
+          "totalSupply": "436,000 PAXG",
+          "holders": 85000,
+          "transfers24h": 210,
+          "price": 2450,
+          "priceUnit": "USD/oz",
+          "liquidity": "$85M",
+          "note": "已在 HashKey Exchange 上线，持牌平台可交易",
+          "hkRelevance": "high"
+        },
+        {
+          "name": "HKMA Tokenized Green Bond (Tranche 1)",
+          "symbol": "HKGB-T1",
+          "chain": "Ethereum",
+          "contractAddress": "",
+          "totalSupply": "HK$800M",
+          "note": "全球首只政府代币化绿色债券，机构市场",
+          "hkRelevance": "high"
+        },
+        {
+          "name": "HKMA Tokenized Green Bond (Tranche 2)",
+          "symbol": "HKGB-T2",
+          "chain": "Multi-chain",
+          "contractAddress": "",
+          "totalSupply": "~HK$6B",
+          "note": "第二批代币化绿色债券（多币种），机构市场",
+          "hkRelevance": "high"
+        },
+        {
+          "name": "SFC Real Estate RWA Fund",
+          "symbol": "TBD",
+          "chain": "TBD",
+          "contractAddress": "",
+          "totalSupply": "TBD",
+          "note": "2026年3月 SFC 批准首只房地产代币化产品，尚未上线",
+          "hkRelevance": "high"
+        }
+      ],
+      "compliance": [
+        {
+          "productName": "MatrixDock STBT",
+          "issuer": "MatrixDock",
+          "sfcStatus": "authorized",
+          "sfcRef": "SFC 授权投资产品公告",
+          "vatpAvailability": [],
+          "investorType": "pi-only",
+          "restrictions": "仅限专业投资者（PI，≥800万港元资产）",
+          "launchDate": "2024-06",
+          "note": "SFC 授权的首个代币化国债基金，香港发行"
+        },
+        {
+          "productName": "PAXG (via HashKey)",
+          "issuer": "Paxos",
+          "sfcStatus": "authorized",
+          "sfcRef": "HashKey Exchange 持牌运营",
+          "vatpAvailability": [
+            "HashKey Exchange"
+          ],
+          "investorType": "retail",
+          "restrictions": "持牌平台面向零售投资者开放",
+          "launchDate": "2023-09",
+          "note": "1 PAXG = 1 盎司实物黄金，NYDFS 监管"
+        },
+        {
+          "productName": "HKMA Green Bond Tranche 1",
+          "issuer": "香港特别行政区政府",
+          "sfcStatus": "not-applicable",
+          "vatpAvailability": [],
+          "investorType": "institutional",
+          "restrictions": "面向机构投资者，不通过 VATP 分销",
+          "launchDate": "2023-02",
+          "note": "全球首只政府代币化绿色债券，规模8亿港元"
+        },
+        {
+          "productName": "HKMA Green Bond Tranche 2",
+          "issuer": "香港特别行政区政府",
+          "sfcStatus": "not-applicable",
+          "vatpAvailability": [],
+          "investorType": "institutional",
+          "restrictions": "面向机构投资者，不通过 VATP 分销",
+          "launchDate": "2024-02",
+          "note": "第二批代币化绿色债券，规模约60亿港元（多币种）"
+        },
+        {
+          "productName": "Project Ensemble (HKMA)",
+          "issuer": "HKMA / 汇丰 / 渣打 / 中银",
+          "sfcStatus": "pending",
+          "vatpAvailability": [],
+          "investorType": "institutional",
+          "restrictions": "批发型试点，仅限参与银行",
+          "launchDate": "2024-08",
+          "note": "代币化存款试点，扩展至更广泛的代币化应用场景"
+        },
+        {
+          "productName": "SFC Real Estate RWA Fund",
+          "issuer": "TBD",
+          "sfcStatus": "authorized",
+          "sfcRef": "SFC 2026年3月批准",
+          "vatpAvailability": [],
+          "investorType": "pi-only",
+          "restrictions": "SFC 批准但尚未上线，预计面向专业投资者",
+          "launchDate": "TBD",
+          "note": "2026年3月 SFC 批准首只房地产代币化产品及商品RWA基金"
+        }
+      ],
+      "liquidity": [
+        {
+          "token": "PAXG",
+          "dex": "HashKey Exchange",
+          "pair": "PAXG/HKD",
+          "tvl": "$85M",
+          "volume24h": "~$1.2M",
+          "price": "~$2,450",
+          "priceChange24h": "+0.3%",
+          "chain": "Ethereum"
+        },
+        {
+          "token": "PAXG",
+          "dex": "Uniswap V3",
+          "pair": "PAXG/USDC",
+          "tvl": "$12M",
+          "volume24h": "~$350K",
+          "price": "~$2,450",
+          "priceChange24h": "+0.3%",
+          "chain": "Ethereum"
+        },
+        {
+          "token": "PAXG",
+          "dex": "Curve",
+          "pair": "PAXG/ETH",
+          "tvl": "$3.5M",
+          "volume24h": "~$120K",
+          "price": "~$2,450",
+          "priceChange24h": "+0.3%",
+          "chain": "Ethereum"
+        },
+        {
+          "token": "STBT",
+          "dex": "OTC / 协议内",
+          "pair": "STBT/USD",
+          "tvl": "$150M",
+          "volume24h": "N/A",
+          "price": "$1.00",
+          "chain": "Ethereum"
+        }
+      ],
+      "dataSources": [
+        {
+          "name": "SFC 持牌虚拟资产交易平台名单",
+          "url": "https://apps.sfc.hk/ecs/GlobalVAList?lang=zh&token=0"
+        },
+        {
+          "name": "SFC 投资产品公告",
+          "url": "https://www.sfc.hk/en/Regulatory-functions/Products/Authorization-of-Investment-Products"
+        },
+        {
+          "name": "HKMA Project Ensemble",
+          "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/"
+        },
+        {
+          "name": "RWA.xyz",
+          "url": "https://www.rwa.xyz"
+        },
+        {
+          "name": "DeFiLlama RWA",
+          "url": "https://defillama.com/rwa"
+        },
+        {
+          "name": "Etherscan",
+          "url": "https://etherscan.io"
+        },
+        {
+          "name": "HashKey Exchange",
+          "url": "https://www.hashkey.com"
+        }
+      ]
     }
   },
   "trends": [
