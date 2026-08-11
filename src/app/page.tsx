@@ -95,7 +95,34 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Sources & Footer */}
+      {/* RWA Tracker CTA */}
+      <section className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <a
+            href="/rwa"
+            className="flex items-center justify-between group"
+          >
+            <div className="flex items-center gap-4">
+              <div className="p-3 rounded-lg bg-white/10">
+                <BarChart3 className="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-white">
+                  {t.rwa.hero.navTitle}
+                </h3>
+                <p className="text-sm text-emerald-100">
+                  {t.rwa.hero.navSubtitle}
+                </p>
+              </div>
+            </div>
+            <span className="text-white text-2xl group-hover:translate-x-1 transition-transform">
+              →
+            </span>
+          </a>
+        </div>
+      </section>
+
+      {/* Sources & Footer — uses locale-specific translated data */}
       <SourcesSection
         t={t}
         sources={t.sources}

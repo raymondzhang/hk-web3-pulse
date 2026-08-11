@@ -1,0 +1,376 @@
+{
+  "lastUpdated": "2026-08-11",
+  "dataDate": "2026-08-10",
+  "marketSummary": {
+    "totalAumRwaXyz": 38.2,
+    "totalTvlDefiLlama": 27.7,
+    "dataGapPercent": 38,
+    "totalProtocols": 106,
+    "totalAssetsRwaXyz": 1203,
+    "totalHoldersDistributed": 1.7,
+    "holdersGrowth40d": 0.7,
+    "newHolders40d": 670000,
+    "newHoldersFromStocks": 0.93
+  },
+  "assetTypes": [
+    {
+      "rank": 1,
+      "category": "treasury",
+      "icon": "🥇",
+      "tvl": 15.0,
+      "percent": 54,
+      "examples": ["Blackrock BUIDL", "Circle USYC", "Ondo USDY", "Spiko", "Anemoy"],
+      "hkRelevance": "medium",
+      "hkNote": "美债代币化产品全球可买，但香港散户受 SFC 合规限制无法直接购买多数链上产品"
+    },
+    {
+      "rank": 2,
+      "category": "gold",
+      "icon": "🥈",
+      "tvl": 5.2,
+      "percent": 19,
+      "examples": ["Tether Gold (XAUt)", "Paxos Gold (PAXG)", "MatrixDock XAUM"],
+      "hkRelevance": "high",
+      "hkNote": "PAXG、XAUt 已在 HashKey 等持牌平台上线，香港对实物黄金代币接受度高"
+    },
+    {
+      "rank": 3,
+      "category": "stocks",
+      "icon": "🥉",
+      "tvl": 2.5,
+      "percent": 9,
+      "examples": ["Ondo Global Markets", "xStocks", "Blockchain Capital"],
+      "hkRelevance": "low",
+      "hkNote": "Robinhood、xStocks 均未获 SFC 牌照，香港散户无法合法使用。此增长在香港不可复制"
+    },
+    {
+      "rank": 4,
+      "category": "privateCredit",
+      "icon": "4",
+      "tvl": 2.4,
+      "percent": 9,
+      "examples": ["Centrifuge", "Apollo (Securitize)", "Figure Markets"],
+      "hkRelevance": "high",
+      "hkNote": "Centrifuge 等产品在亚太几乎没有存在感，香港同样适用降温趋势"
+    },
+    {
+      "rank": 5,
+      "category": "moneyMarket",
+      "icon": "5",
+      "tvl": 0.8,
+      "percent": 3,
+      "examples": ["Hastra", "R25", "Mantle Index Four"],
+      "hkRelevance": "medium",
+      "hkNote": ""
+    },
+    {
+      "rank": 6,
+      "category": "realEstate",
+      "icon": "6",
+      "tvl": 0.5,
+      "percent": 2,
+      "examples": ["RE Protocol", "RealT", "Lofty"],
+      "hkRelevance": "low",
+      "hkNote": "香港房地产代币化法律框架不明确，几乎空白"
+    },
+    {
+      "rank": 7,
+      "category": "other",
+      "icon": "7",
+      "tvl": 0.3,
+      "percent": 1,
+      "examples": ["T RIZE", "Stobox", "Brickken"],
+      "hkRelevance": "low",
+      "hkNote": ""
+    }
+  ],
+  "topProjects": [
+    {
+      "name": "Blackrock BUIDL",
+      "tvl": 3.51,
+      "category": "treasury",
+      "issuer": "BlackRock / Securitize",
+      "chain": "Ethereum",
+      "contractAddress": "0x7712c34205737192402172409a8F7ccef8aA2AEc",
+      "tier": 1,
+      "hkRelevant": true,
+      "note": "最大单一 RWA 产品，传统资管直接下场"
+    },
+    {
+      "name": "Tether Gold (XAUt)",
+      "tvl": 3.07,
+      "category": "gold",
+      "issuer": "Tether",
+      "chain": "Ethereum",
+      "contractAddress": "0x68749665FF8D2d112Fa859AA293F07A622782F38",
+      "tier": 1,
+      "hkRelevant": true,
+      "note": "1 XAUt = 1 盎司实物黄金"
+    },
+    {
+      "name": "Circle USYC",
+      "tvl": 3.00,
+      "category": "treasury",
+      "issuer": "Circle / Hashnote",
+      "chain": "Ethereum",
+      "contractAddress": "0x136C75ffE7F60Ed82aBCE448c93541d3918Cd00B",
+      "tier": 1,
+      "hkRelevant": true,
+      "note": "短期美债收益代币"
+    },
+    {
+      "name": "Ondo Yield (USDY/OUSG)",
+      "tvl": 2.52,
+      "category": "treasury",
+      "issuer": "Ondo Finance",
+      "chain": "Multi-chain (12)",
+      "contractAddress": "0xe8619a4dab3b5b38ddc66ed2cfe5d2d78141c443",
+      "tier": 1,
+      "hkRelevant": false,
+      "note": "链上原生 RWA 先驱，多链部署"
+    },
+    {
+      "name": "Spiko",
+      "tvl": 2.34,
+      "category": "treasury",
+      "issuer": "Spiko",
+      "chain": "Multi-chain",
+      "contractAddress": "",
+      "tier": 1,
+      "hkRelevant": false,
+      "note": "欧洲背景，MiCA 框架下运营"
+    },
+    {
+      "name": "Paxos Gold (PAXG)",
+      "tvl": 1.89,
+      "category": "gold",
+      "issuer": "Paxos",
+      "chain": "Ethereum",
+      "contractAddress": "0x45804880De22913dAFE09f4980848ECE6EcbAf78",
+      "tier": 1,
+      "hkRelevant": true,
+      "note": "最早期代币化黄金，NYDFS 监管，已在 HashKey 上线"
+    },
+    {
+      "name": "Centrifuge",
+      "tvl": 1.64,
+      "category": "privateCredit",
+      "issuer": "Centrifuge",
+      "chain": "Multi-chain",
+      "contractAddress": "0xc221b7E65FfC80DE234bbB6667aBDd4699336C9e",
+      "tier": 1,
+      "hkRelevant": false,
+      "note": "结构化信贷协议龙头"
+    },
+    {
+      "name": "Ondo Global Markets",
+      "tvl": 0.96,
+      "category": "stocks",
+      "issuer": "Ondo Finance",
+      "chain": "Multi-chain",
+      "contractAddress": "",
+      "tier": 2,
+      "hkRelevant": false,
+      "note": "代币化股票龙头"
+    },
+    {
+      "name": "Blockchain Capital",
+      "tvl": 0.96,
+      "category": "stocks",
+      "issuer": "Blockchain Capital",
+      "chain": "Ethereum",
+      "contractAddress": "",
+      "tier": 2,
+      "hkRelevant": false,
+      "note": "代币化 VC 基金份额"
+    },
+    {
+      "name": "Anemoy Capital",
+      "tvl": 0.87,
+      "category": "treasury",
+      "issuer": "Anemoy",
+      "chain": "Centrifuge-based",
+      "contractAddress": "",
+      "tier": 2,
+      "hkRelevant": false,
+      "note": "Web3 原生资管"
+    },
+    {
+      "name": "Superstate (USTB)",
+      "tvl": 0.81,
+      "category": "treasury",
+      "issuer": "Superstate",
+      "chain": "Ethereum",
+      "contractAddress": "0x43415eB6ff9DB7E26A15b704e7A3eDCe97095E5F",
+      "tier": 2,
+      "hkRelevant": false,
+      "note": "前 Compound 创始人创立"
+    },
+    {
+      "name": "MatrixDock STBT",
+      "tvl": 0.15,
+      "category": "treasury",
+      "issuer": "MatrixDock",
+      "chain": "Ethereum",
+      "contractAddress": "0x530824DA86689C9C17CdC2871FfDa69B5EfaC869",
+      "tier": 2,
+      "hkRelevant": true,
+      "note": "SFC 授权的首个代币化国债基金，香港发行"
+    }
+  ],
+  "stockTokenization": {
+    "totalTvl": 2.5,
+    "top3MarketShare": 0.865,
+    "rankings": [
+      { "rank": 1, "platform": "Ondo", "stockCount": 406, "value": 873.9, "marketShare": 38.80 },
+      { "rank": 2, "platform": "Backed Finance", "stockCount": 94, "value": 577.3, "marketShare": 24.31, "distributed": 53.25 },
+      { "rank": 3, "platform": "xStocks", "stockCount": 698, "value": 554.4, "marketShare": 23.35, "distributed": 15.44 },
+      { "rank": 4, "platform": "Securitize", "stockCount": 3, "value": 255.3, "marketShare": 10.75 },
+      { "rank": 5, "platform": "Robinhood", "stockCount": 94, "value": 28.3, "marketShare": 1.19, "distributed": 129.3 },
+      { "rank": 6, "platform": "WisdomTree", "stockCount": 6, "value": 27.4, "marketShare": 1.15, "distributed": 2.53 },
+      { "rank": 7, "platform": "Figure", "stockCount": 1, "value": 23.3, "marketShare": 0.98, "distributed": 89.46 }
+    ],
+    "hkAvailability": "none",
+    "hkNote": "以上所有平台均未获 SFC 牌照，香港散户无法合法参与"
+  },
+  "chainDistribution": [
+    { "chain": "Ethereum", "dominance": "dominant", "projects": ["BUIDL", "USYC", "Ondo", "PAXG", "Centrifuge"], "note": "RWA 绝对主战场，流动性最厚，机构首选" },
+    { "chain": "Solana", "dominance": "growing", "projects": ["xStocks", "OnRe", "Figure"], "note": "高 TPS 适合高频交易类 RWA" },
+    { "chain": "Base", "dominance": "growing", "projects": ["Mountain Protocol", "Anemoy"], "note": "Coinbase L2，合规友好" },
+    { "chain": "Arbitrum", "dominance": "growing", "projects": ["Centrifuge", "xStocks", "TrueFi"], "note": "L2 低成本" },
+    { "chain": "Polygon", "dominance": "growing", "projects": ["Centrifuge", "Mountain Protocol"], "note": "低成本 + EVM 兼容" },
+    { "chain": "Plume", "dominance": "emerging", "projects": ["Ondo Yield"], "note": "RWA 专用链（新）" },
+    { "chain": "Stellar/XRP", "dominance": "growing", "projects": ["Ondo", "Spiko"], "note": "跨境支付 + 合规框架" }
+  ],
+  "hkSpecific": {
+    "vatps": [
+      { "name": "HashKey Exchange", "license": "VATP #1", "status": "licensed", "rwaTokens": ["BTC", "ETH", "PAXG"], "note": "PAXG 已上线" },
+      { "name": "OSL", "license": "VATP #2", "status": "licensed", "rwaTokens": ["Tokenized bonds pilot"], "note": "" },
+      { "name": "HKVAX", "license": "VATP #3", "status": "licensed", "rwaTokens": ["Tokenized green bonds"], "note": "" },
+      { "name": "Hibiki", "license": "VATP #4", "status": "licensed", "rwaTokens": [], "note": "" }
+    ],
+    "hkProducts": [
+      {
+        "name": "MatrixDock STBT",
+        "type": "treasury",
+        "status": "live",
+        "chain": "Ethereum",
+        "address": "0x530824DA86689C9C17CdC2871FfDa69B5EfaC869",
+        "note": "SFC 授权的首个代币化国债基金",
+        "hkRelevance": "high"
+      },
+      {
+        "name": "HKMA Green Bond (Tranche 1)",
+        "type": "greenBond",
+        "status": "issued",
+        "chain": "Ethereum",
+        "address": "",
+        "scale": "HK$800M",
+        "note": "全球首只政府代币化绿色债券",
+        "hkRelevance": "high"
+      },
+      {
+        "name": "HKMA Green Bond (Tranche 2)",
+        "type": "greenBond",
+        "status": "issued",
+        "chain": "Multi-chain",
+        "address": "",
+        "scale": "~HK$6B",
+        "note": "第二批代币化绿色债券（多币种）",
+        "hkRelevance": "high"
+      },
+      {
+        "name": "HKMA Project Ensemble",
+        "type": "institutional",
+        "status": "pilot",
+        "chain": "Permissioned",
+        "address": "",
+        "note": "汇丰/渣打/中银参与的代币化存款试点",
+        "hkRelevance": "high"
+      },
+      {
+        "name": "Paxos Gold (PAXG) on HashKey",
+        "type": "gold",
+        "status": "live",
+        "chain": "Ethereum",
+        "address": "0x45804880De22913dAFE09f4980848ECE6EcbAf78",
+        "note": "持牌平台可交易的代币化黄金",
+        "hkRelevance": "high"
+      },
+      {
+        "name": "SFC Real Estate RWA Fund",
+        "type": "realEstate",
+        "status": "approved",
+        "chain": "TBD",
+        "address": "",
+        "note": "2026年3月 SFC 批准首只房地产代币化产品",
+        "hkRelevance": "high"
+      }
+    ],
+    "regulatoryAccess": {
+      "retailTreasury": "restricted",
+      "retailStocks": "unavailable",
+      "retailGold": "available",
+      "piTreasury": "available",
+      "piThreshold": "≥800万港元资产",
+      "stablecoin": "pending"
+    },
+    "globalVsHk": {
+      "rwaTvl": { "global": 38.2, "hk": 0.1, "unit": "B" },
+      "holders": { "global": 1700000, "hk": 5000 },
+      "tokenizedStocks": { "global": 2.5, "hk": 0, "unit": "B" },
+      "compliantChannels": { "global": 50, "hk": 4 }
+    }
+  },
+  "trends": [
+    {
+      "id": "treasury-dominance",
+      "title": "国债代币化是杀手级应用",
+      "description": "BlackRock BUIDL 入场具有标志性意义。国债 TVL 从 2024 年初 ~$1B 增长到当前 ~$15B，一年翻 15 倍。传统资管巨头（Blackrock、Franklin Templeton、WisdomTree、VanEck）全部在链上。",
+      "hkImpact": "medium",
+      "hkNote": "为银行客户提供代币化国债投资通道是 AlphaToken 的高价值方向"
+    },
+    {
+      "id": "tradfi-dominance",
+      "title": "从 Crypto-native 到 TradFi 主导",
+      "description": "早期 RWA 由 Crypto-native 团队推动（Ondo、Centrifuge），现在传统金融巨头成为主力：BlackRock > Ondo > Circle > Tether > Paxos。",
+      "hkImpact": "high",
+      "hkNote": "HKMA Project Ensemble 就是传统银行主导的代币化试点，方向一致"
+    },
+    {
+      "id": "stock-explosion",
+      "title": "股票代币化是当前最大爆发点",
+      "description": "40 天新增 70 万用户，93% 来自股票类资产。零教育成本（英伟达、特斯拉自带认知）+ 已有交易习惯 + 分发渠道革命（Robinhood 自建链上基础设施）。",
+      "hkImpact": "low",
+      "hkNote": "这些增长在香港几乎不可能复制——Robinhood 无香港牌照，xStocks 未在 SFC 注册"
+    },
+    {
+      "id": "channel-driven",
+      "title": "从发行驱动到渠道驱动",
+      "description": "过去市场关心谁能发行更大资产，现在 Robinhood、Kraken、xStocks 等分发平台变得同样重要。",
+      "hkImpact": "medium",
+      "hkNote": "香港的'渠道'不是 Robinhood，而是 HashKey、OSL、HKVAX 等持牌 VATP"
+    },
+    {
+      "id": "stablecoin-rwa-fusion",
+      "title": "稳定币与 RWA 融合",
+      "description": "Ethena USDtb ($352M)、Frax USD ($112M) 等以国债为底层的收益型稳定币出现。稳定币底层资产从纯 USDC → 代币化国债。",
+      "hkImpact": "high",
+      "hkNote": "香港正在推进 HKD 稳定币立法（2025 年《稳定币条例》），高度契合"
+    },
+    {
+      "id": "asia-pacific",
+      "title": "亚太市场启动",
+      "description": "新加坡 MAS 监管下的 DigiFT ($160M)、香港稳定币立法推进、马来西亚 HLB Project Atom、中东 ADGM/VARA 积极拥抱。",
+      "hkImpact": "high",
+      "hkNote": "香港在亚太 RWA 竞争中处于核心位置"
+    },
+    {
+      "id": "private-credit-cooling",
+      "title": "私人信贷赛道降温",
+      "description": "Centrifuge 仍是龙头 ($1.64B)，但增速放缓。Maple Finance 转型，TrueFi、Goldfinch TVL 萎缩。坏账风险暴露 + 监管不确定性。",
+      "hkImpact": "medium",
+      "hkNote": "私人信贷在亚太几乎没有存在感，对香港影响有限"
+    }
+  ]
+}
