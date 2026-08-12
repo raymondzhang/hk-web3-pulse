@@ -1,4 +1,4 @@
-import { Activity, BarChart3, ArrowLeft } from "lucide-react";
+import { BarChart3, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TopNav } from "@/components/TopNav";
@@ -52,10 +52,6 @@ export default async function RwaPage() {
                 {t.rwa.hero.subtitle}
               </p>
               <div className="flex flex-wrap gap-4 text-sm text-slate-400">
-                <div className="flex items-center gap-1.5">
-                  <Activity className="h-4 w-4" />
-                  <span>{t.rwa.hero.tagOnchain}</span>
-                </div>
                 <div className="flex items-center gap-1.5">
                   <BarChart3 className="h-4 w-4" />
                   <span>{t.rwa.hero.tagBenchmark}</span>
