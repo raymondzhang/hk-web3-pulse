@@ -1,6 +1,7 @@
 import { Activity, BarChart3, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { TopNav } from "@/components/TopNav";
 import { RwaMarketOverview } from "@/components/rwa/RwaMarketOverview";
 import { RwaAssetTable } from "@/components/rwa/RwaAssetTable";
 import { RwaTopProjects } from "@/components/rwa/RwaTopProjects";
@@ -21,6 +22,9 @@ export default async function RwaPage() {
 
   return (
     <main className="min-h-full flex flex-col">
+      {/* Top Navigation */}
+      <TopNav t={t} currentPath="rwa" />
+
       {/* Hero */}
       <section className="w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">

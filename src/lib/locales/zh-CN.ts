@@ -5,6 +5,11 @@ export const zhCN = {
       "客观、中立、可持续更新的香港Web3发展仪表盘，聚焦监管、RWA、稳定币三大领域，对标全球领先司法辖区。",
   },
 
+  nav: {
+    home: "首页",
+    rwa: "RWA 追踪器",
+  },
+
   hero: {
     badge: "MVP v1.0",
     title: "HK Web3 Pulse",

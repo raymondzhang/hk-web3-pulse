@@ -5,6 +5,11 @@ export const zhTW = {
       "客觀、中立、可持續更新的香港Web3發展儀表板，聚焦監管、RWA、穩定幣三大領域，對標全球領先司法轄區。",
   },
 
+  nav: {
+    home: "首頁",
+    rwa: "RWA 追蹤器",
+  },
+
   hero: {
     badge: "MVP v1.0",
     title: "HK Web3 Pulse",

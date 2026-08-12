@@ -1,6 +1,8 @@
-import { Activity, BarChart3, Shield } from "lucide-react";
+import { Activity, BarChart3, Shield, TrendingUp, ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { TopNav } from "@/components/TopNav";
 import { OverallStatus } from "@/components/OverallStatus";
 import { DomainCard } from "@/components/DomainCard";
 import { ComparisonTable } from "@/components/ComparisonTable";
@@ -20,6 +22,9 @@ export default async function Home() {
 
   return (
     <main className="min-h-full flex flex-col">
+      {/* Top Navigation */}
+      <TopNav t={t} currentPath="home" />
+
       {/* Hero Section */}
       <section className="w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
@@ -37,7 +42,7 @@ export default async function Home() {
               <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-6">
                 {t.hero.subtitle}
               </p>
-              <div className="flex flex-wrap gap-4 text-sm text-slate-400">
+              <div className="flex flex-wrap gap-4 text-sm text-slate-400 mb-8">
                 <div className="flex items-center gap-1.5">
                   <Shield className="h-4 w-4" />
                   <span>{t.hero.tagOfficial}</span>
@@ -47,6 +52,25 @@ export default async function Home() {
                   <span>{t.hero.tagCompare}</span>
                 </div>
               </div>
+
+              {/* RWA Tracker CTA — inside Hero */}
+              <Link
+                href="/rwa"
+                className="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-emerald-500/15 border border-emerald-500/30 hover:bg-emerald-500/25 hover:border-emerald-400/50 transition-all group"
+              >
+                <div className="p-2 rounded-lg bg-emerald-500/20">
+                  <TrendingUp className="h-5 w-5 text-emerald-400" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-emerald-300 group-hover:text-emerald-200">
+                    {t.rwa.hero.navTitle}
+                  </p>
+                  <p className="text-xs text-slate-400 group-hover:text-slate-300">
+                    {t.rwa.hero.navSubtitle}
+                  </p>
+                </div>
+                <ArrowRight className="h-5 w-5 text-emerald-400 group-hover:translate-x-1 transition-transform shrink-0" />
+              </Link>
             </div>
             <div className="shrink-0 flex items-center gap-3">
               <LanguageSwitcher currentLocale={locale} />
@@ -92,33 +116,6 @@ export default async function Home() {
           </h2>
           <p className="text-sm text-slate-500 dark:text-slate-400 mb-8">{t.feedback.subtitle}</p>
           <FeedbackForm t={t} />
-        </div>
-      </section>
-
-      {/* RWA Tracker CTA */}
-      <section className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <a
-            href="/rwa"
-            className="flex items-center justify-between group"
-          >
-            <div className="flex items-center gap-4">
-              <div className="p-3 rounded-lg bg-white/10">
-                <BarChart3 className="h-6 w-6 text-white" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-white">
-                  {t.rwa.hero.navTitle}
-                </h3>
-                <p className="text-sm text-emerald-100">
-                  {t.rwa.hero.navSubtitle}
-                </p>
-              </div>
-            </div>
-            <span className="text-white text-2xl group-hover:translate-x-1 transition-transform">
-              →
-            </span>
-          </a>
         </div>
       </section>
 

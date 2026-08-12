@@ -5,6 +5,11 @@ export const en = {
       "An objective, neutral, and continuously updated Hong Kong Web3 development dashboard, focusing on regulation, RWA, and stablecoins, benchmarked against leading global jurisdictions.",
   },
 
+  nav: {
+    home: "Home",
+    rwa: "RWA Tracker",
+  },
+
   hero: {
     badge: "MVP v1.0",
     title: "HK Web3 Pulse",
