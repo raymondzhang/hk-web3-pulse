@@ -375,11 +375,11 @@ export const en = {
     hero: {
       back: "← Back to Dashboard",
       badge: "RWA Tracker v1.0",
-      title: "Hong Kong RWA Tokenization Tracker",
-      subtitle: "Global RWA market panorama + Hong Kong localization analysis — On-chain data, benchmarked against RWA.xyz / DeFiLlama",
+      title: "Hong Kong RWA Trend Tracker",
+      subtitle: "Global RWA market panorama + Hong Kong localization analysis — On-chain data direct",
       tagOnchain: "On-chain data direct",
       tagBenchmark: "Global vs HK benchmark",
-      navTitle: "📊 RWA Tokenization Tracker",
+      navTitle: "📊 RWA Trend Tracker",
       navSubtitle: "Global $38.2B RWA market panorama + HK localization analysis →",
     },
     overview: {

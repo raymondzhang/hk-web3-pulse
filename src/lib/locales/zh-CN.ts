@@ -390,11 +390,11 @@ export const zhCN = {
     hero: {
       back: "← 返回主面板",
       badge: "RWA Tracker v1.0",
-      title: "香港 RWA 代币化追踪器",
-      subtitle: "全球 RWA 市场全景 + 香港本地化适用性分析 — 链上数据直读，对标 RWA.xyz / DeFiLlama",
+      title: "香港 RWA 趋势追踪",
+      subtitle: "全球 RWA 市场全景 + 香港本地化适用性分析 — 链上数据直读",
       tagOnchain: "链上数据直读",
       tagBenchmark: "全球 vs 香港对标",
-      navTitle: "📊 RWA 代币化追踪器",
+      navTitle: "📊 RWA 趋势追踪",
       navSubtitle: "全球 $38.2B RWA 市场全景 + 香港本地化分析 →",
     },
     overview: {
