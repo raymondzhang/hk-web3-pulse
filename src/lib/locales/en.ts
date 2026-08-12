@@ -81,9 +81,9 @@ export const en = {
       status: "Advancing" as const,
       name: "Regulation & Licensing",
       description:
-        "The SFC and HKMA have established a comprehensive virtual asset regulatory framework, with the VATP licensing regime continuing to be refined.",
+        "Hong Kong has built one of the world's most comprehensive virtual asset regulatory frameworks. VATP licensing is mature, four new licensing regimes (dealers, custodians, advisors, asset managers) are advancing toward legislation, and the SFC continues to strengthen cybersecurity and investor protection requirements.",
       globalComparison:
-        "Regulatory standards are on par with Singapore with faster execution; Dubai's VARA takes a more aggressive approach but with relatively lower compliance thresholds.",
+        "Regulatory breadth leads Singapore and Dubai — HK is building a full-spectrum VA licensing system; Dubai VARA has issued 51 licenses but with lower compliance thresholds.",
       milestones: [
         {
           date: "2023-06",
@@ -98,57 +98,51 @@ export const en = {
           ],
         },
         {
-          date: "2026-01",
+          date: "2025-12",
           description: [
-            "First batch of stablecoin issuer licenses issued (high threshold, only a few approved)",
+            "SFC/FSTB published consultation conclusions on VA dealer and custodian regulation",
           ],
         },
         {
-          date: "2026-04",
+          date: "2026-05",
           description: [
-            "SFC released new framework allowing tokenized bond trading on licensed platforms, opening to retail investors",
+            "SFC/FSTB published consultation conclusions on VA advisory and asset management — four new licensing regimes taking shape",
           ],
         },
         {
-          date: "2026-06",
+          date: "2026-07",
           description: [
-            "SFC issued circular on Relevant Stablecoin services, clarifying regulatory requirements for VATPs offering stablecoin services",
+            "SFC mandated phishing-resistant authentication for VATPs, banning SMS OTP as sole login method",
+          ],
+        },
+        {
+          date: "2026-Q3",
+          description: [
+            "Legislative proposals for four new VA licensing regimes (dealers, custodians, advisors, asset managers) being prepared for LegCo",
           ],
         },
       ],
-      lastUpdated: "2026-08-05",
+      lastUpdated: "2026-08-12",
     },
     {
       id: "rwa",
       status: "Advancing" as const,
       name: "RWA / Tokenization",
       description:
-        "Hong Kong is a global leader in real-world asset (RWA) tokenization, with active promotion from both the government and regulators.",
+        "Hong Kong is a global leader in RWA tokenization: government directly participates in tokenized bond issuance, SFC approved the first native tokenized fund, and digital bond infrastructure (DACC) has landed in Hong Kong, marking a shift from government-led to market-driven diversification.",
       globalComparison:
-        "Hong Kong leads both Singapore and Dubai in RWA tokenization; direct government participation in bond issuance is rare worldwide.",
+        "Globally leading — Hong Kong is the only jurisdiction with government tokenized bonds, SFC-approved tokenized fund, and dedicated clearing infrastructure simultaneously.",
       milestones: [
         {
           date: "2024-02",
           description: [
-            "Hong Kong government successfully issued the first tranche of tokenized green bonds, totaling HK$800 million",
+            "Hong Kong government issued the world's first tokenized green bonds, totaling HK$800 million",
           ],
         },
         {
-          date: "2024-08",
+          date: "2025-11",
           description: [
-            "HKMA launched Project Ensemble sandbox to explore interbank trading of tokenized assets",
-          ],
-        },
-        {
-          date: "2025-06",
-          description: [
-            "Project Ensemble advanced to the EnsembleTX phase, expanding to broader tokenization use cases",
-          ],
-        },
-        {
-          date: "2025-12",
-          description: [
-            "Cumulative issuance of tokenized green and infrastructure bonds exceeded US$2 billion",
+            "Project Ensemble moved from sandbox to EnsembleTX pilot phase, conducting real-value transactions",
           ],
         },
         {
@@ -157,24 +151,36 @@ export const en = {
             "SFC approved the first real estate tokenization product and commodity RWA fund",
           ],
         },
+        {
+          date: "2026-04",
+          description: [
+            "Tokenized product secondary market opened to retail investors; Web3 Festival 2026 held",
+          ],
+        },
+        {
+          date: "2026-07",
+          description: [
+            "SFC approved Hong Kong's first fully native tokenized bond fund (Baillie Gifford), signaling global institutions accelerating HK布局",
+          ],
+        },
+        {
+          date: "2026-07",
+          description: [
+            "DACC (Digital Asset Clearing Center) headquartered in Hong Kong, building infrastructure for tokenized bonds, stablecoins, and cross-border RMB settlement",
+          ],
+        },
       ],
-      lastUpdated: "2026-08-05",
+      lastUpdated: "2026-08-12",
     },
     {
       id: "stablecoins",
-      status: "Developing" as const,
+      status: "Advancing" as const,
       name: "Stablecoins",
       description:
-        "The stablecoin regulatory framework has been enacted and issuer licenses are being granted, but market size and ecosystem remain in early development.",
+        "The stablecoin regulatory framework is fully operational: HSBC and Anchorpoint hold the first licenses, 36 formal applications are under review, and the HKMA maintains an 'open yet cautious' stance on a second batch of licenses potentially around October.",
       globalComparison:
-        "Singapore's MAS stablecoin framework was enacted earlier in 2023; Dubai maintains an open stance on stablecoins but detailed regulations are still being refined.",
+        "Framework maturity comparable to Singapore's MAS framework, but with a distinct large-bank-focused licensing strategy; mainland China's Circular 42 explicitly banned unauthorized yuan stablecoins.",
       milestones: [
-        {
-          date: "2024-07",
-          description: [
-            "Hong Kong Legislative Council passed the Stablecoin Bill, establishing a licensing regime for fiat-backed stablecoin issuers",
-          ],
-        },
         {
           date: "2025-08",
           description: [
@@ -182,135 +188,146 @@ export const en = {
           ],
         },
         {
-          date: "2025-10",
+          date: "2025-09",
           description: [
-            "HKMA received 70+ expressions of interest, emphasizing the need for viable business models",
+            "HKMA received 36 formal stablecoin issuer license applications",
           ],
         },
         {
-          date: "2026-01",
+          date: "2026-02",
           description: [
-            "First batch of stablecoin issuer licenses began issuance; high threshold with only a few institutions approved",
+            "Mainland China issued Circular 42, banning unauthorized yuan stablecoins and asset tokenization",
+          ],
+        },
+        {
+          date: "2026-04",
+          description: [
+            "First licenses granted: HSBC (HKD stablecoin, integrated with PayMe) and Anchorpoint Financial (Standard Chartered × Animoca Brands)",
+          ],
+        },
+        {
+          date: "2026-06",
+          description: [
+            "HKMA relaxed compliance requirements for licensed stablecoin issuers, lowering barriers to entry",
+          ],
+        },
+        {
+          date: "2026-08",
+          description: [
+            "HKMA says 'open yet cautious' on more licenses; market rumors suggest second batch may be approved around October National Day",
           ],
         },
       ],
-      lastUpdated: "2026-08-05",
+      lastUpdated: "2026-08-12",
     },
   ],
 
   comparisonData: [
     {
       area: "Regulation & Licensing",
-      hongKong: "Advancing — VATP licensing regime is mature; Stablecoin Ordinance in effect",
-      singapore: "Advancing — MAS licensing regime has been operational for years with a well-established framework",
-      dubai: "Advancing — VARA framework is aggressive; license issuance is fast-paced",
+      hongKong: "Advancing — VATP regime mature + four new licensing regimes (dealers/custodians/advisors/asset managers) advancing to legislation; SFC strengthening cybersecurity requirements",
+      singapore: "Advancing — MAS published supervisory expectations for DPT service providers (7 areas); licensing regime stable",
+      dubai: "Advancing — VARA has issued 51 licenses; mature framework but lower compliance thresholds",
     },
     {
       area: "RWA / Tokenization",
-      hongKong: "Advancing — Government directly participates in tokenized bond issuance, a global leader",
-      singapore: "Developing — Sandbox exploration phase; lower level of government participation",
-      dubai: "Developing — DIFC is actively exploring, but at a limited scale",
+      hongKong: "Globally leading — Government tokenized bonds + SFC-approved first native tokenized fund + DACC clearing infrastructure",
+      singapore: "Developing — Sandbox exploration phase; lower government participation",
+      dubai: "Developing — DIFC actively exploring, but limited scale",
     },
     {
       area: "Stablecoins",
-      hongKong: "Advancing — First licenses officially granted (HSBC, Anchorpoint); requirements being relaxed",
-      singapore: "Advancing — Regulatory framework was enacted first; higher market activity",
+      hongKong: "Advancing — 2 licenses operational (HSBC/Anchorpoint), 36 applications under review, second batch possibly around October",
+      singapore: "Advancing — MAS framework operational for years; higher market activity",
       dubai: "Developing — Open stance; detailed regulations still being refined",
     },
   ],
 
   timelineData: [
     {
+      date: "2026-08",
+      title: "HKMA Open Yet Cautious on More Stablecoin Licenses",
+      description: "HKMA has not ruled out issuing more licenses; 36 formal applications under review; market rumors suggest second batch may be approved around October National Day",
+    },
+    {
+      date: "2026-07",
+      title: "SFC Approves First Fully Native Tokenized Bond Fund",
+      description: "Global asset manager Baillie Gifford established the first fully native tokenized bond fund in Hong Kong, approved by SFC — signaling accelerating institutional adoption",
+    },
+    {
+      date: "2026-07",
+      title: "SFC Mandates Phishing-Resistant Authentication for VATPs",
+      description: "SFC issued circular banning SMS OTP as sole login method for VATPs and internet brokers, mandating phishing-resistant authentication",
+    },
+    {
+      date: "2026-07",
+      title: "DACC Digital Asset Clearing Infrastructure Launches in HK",
+      description: "DACC headquartered in Hong Kong, building infrastructure for tokenized bonds, stablecoins, and cross-border RMB settlement; backed by 12 institutional investors",
+    },
+    {
       date: "2026-06",
       title: "HKMA Relaxes Stablecoin Requirements",
       description: "HKMA relaxed compliance requirements for licensed stablecoin issuers, lowering barriers to encourage more institutional participation",
     },
     {
-      date: "2026-04",
-      title: "SFC Tokenized Bond Secondary Market Framework",
-      description: "SFC released new framework allowing licensed platforms to offer tokenized bond trading to retail investors, first explicit regulation globally",
+      date: "2026-05",
+      title: "Four New VA Licensing Regime Consultation Conclusions Published",
+      description: "SFC/FSTB published consultation conclusions on VA advisory and asset management regulation; four licensing regimes being prepared for legislation",
     },
     {
       date: "2026-04",
       title: "First Stablecoin Licenses Officially Granted",
-      description: "HSBC and Anchorpoint Financial approved by HKMA as first officially licensed stablecoin issuers",
+      description: "HSBC (HKD stablecoin, integrated with PayMe) and Anchorpoint Financial (Standard Chartered × Animoca Brands) approved by HKMA",
     },
     {
       date: "2026-04",
-      title: "Web3 Festival 2026",
-      description: "Hong Kong Web3 Festival 2026 held; tokenized secondary market opened to retail investors",
-    },
-    {
-      date: "2026-Q2",
-      title: "Custody & Dealer New Regulations Advancing",
-      description:
-        "New regulations for virtual asset custody services and digital asset dealers are advancing through legislation.",
+      title: "Tokenized Secondary Market Opens to Retail + Web3 Festival",
+      description: "SFC released tokenized bond secondary market framework; retail investors can participate; Web3 Festival 2026 held",
     },
     {
       date: "2026-03",
       title: "First Real Estate RWA Product Approved",
-      description:
-        "SFC approved the first real estate tokenization product and commodity RWA fund.",
+      description: "SFC approved the first real estate tokenization product and commodity RWA fund",
     },
     {
-      date: "2026-01",
-      title: "First Stablecoin Licenses Issued",
-      description:
-        "HKMA issued the first batch of stablecoin issuer licenses to a select group of qualified institutions.",
+      date: "2026-02",
+      title: "China Circular 42 Bans Unauthorized Yuan Stablecoins",
+      description: "PBOC and CSRC issued notice explicitly banning unauthorized yuan stablecoins and asset tokenization, impacting pending HK license applications",
     },
     {
       date: "2025-12",
-      title: "Tokenized Bond Cumulative Issuance Exceeds US$2 Billion",
-      description:
-        "Hong Kong's cumulative issuance of tokenized green and infrastructure bonds surpassed US$2 billion.",
+      title: "VA Dealer and Custodian Consultation Conclusions Published",
+      description: "SFC/FSTB published consultation conclusions on VA dealer and custodian regulation, accelerating full-spectrum VA licensing",
     },
     {
-      date: "2025-10",
-      title: "70+ Stablecoin Expressions of Interest",
-      description:
-        "HKMA received over 70 expressions of interest from prospective stablecoin issuers, emphasizing the need for viable business models.",
+      date: "2025-11",
+      title: "Project Ensemble Enters EnsembleTX Pilot",
+      description: "Moved from sandbox experimentation to real-value transaction pilot, covering broader tokenized asset scenarios",
     },
     {
       date: "2025-08",
       title: "Stablecoin Ordinance Officially Enacted",
-      description:
-        "The Stablecoin Ordinance officially came into effect; HKMA began accepting stablecoin issuer license applications.",
-    },
-    {
-      date: "2025-06",
-      title: "EnsembleTX Phase Launched",
-      description:
-        "Project Ensemble expanded to EnsembleTX, covering a broader range of tokenized asset scenarios.",
-    },
-    {
-      date: "2024-08",
-      title: "Project Ensemble Sandbox Launched",
-      description:
-        "HKMA launched the Ensemble sandbox to explore the use of tokenized assets in interbank trading.",
+      description: "The Stablecoin Ordinance officially came into effect; HKMA became the stablecoin issuer regulator",
     },
     {
       date: "2024-07",
       title: "Stablecoin Bill Passed",
-      description:
-        "The Legislative Council passed the Stablecoin Bill, establishing a licensing regime for fiat-backed stablecoins.",
+      description: "The Legislative Council passed the Stablecoin Bill, establishing a licensing regime for fiat-backed stablecoins",
     },
     {
       date: "2024-02",
       title: "First Tokenized Green Bonds Issued",
-      description:
-        "The Hong Kong government issued the world's first tranche of tokenized green bonds, totaling HK$800 million.",
+      description: "The Hong Kong government issued the world's first tranche of tokenized green bonds, totaling HK$800 million",
     },
     {
       date: "2023-06",
       title: "VATP Licensing Regime Takes Effect",
-      description:
-        "The virtual asset trading platform licensing regime was officially implemented; all platforms operating in Hong Kong are required to be licensed.",
+      description: "The virtual asset trading platform licensing regime was officially implemented; all platforms operating in Hong Kong are required to be licensed",
     },
     {
       date: "2022-10",
       title: "Hong Kong Publishes Policy Statement on Virtual Assets",
-      description:
-        "The Financial Secretary published the Policy Statement on the Development of Virtual Assets in Hong Kong, declaring the vision of developing Hong Kong as an international virtual asset hub.",
+      description: "The Financial Secretary published the Policy Statement on the Development of Virtual Assets in Hong Kong, declaring the vision of developing Hong Kong as an international virtual asset hub",
     },
   ],
 
