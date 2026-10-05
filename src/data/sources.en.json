@@ -1,1 +1,30 @@
-"[\n  {\n    \"name\": \"Securities and Futures Commission (SFC)\",\n    \"url\": \"https://www.sfc.hk\"\n  },\n  {\n    \"name\": \"Hong Kong Monetary Authority (HKMA)\",\n    \"url\": \"https://www.hkma.gov.hk\"\n  },\n  {\n    \"name\": \"Hong Kong Government News\",\n    \"url\": \"https://www.news.gov.hk\"\n  },\n  {\n    \"name\": \"Office of the Financial Secretary\",\n    \"url\": \"https://www.fso.gov.hk\"\n  },\n  {\n    \"name\": \"Atlantic Council CBDC Tracker\",\n    \"url\": \"https://www.atlanticcouncil.org/cbdctracker/\"\n  },\n  {\n    \"name\": \"Monetary Authority of Singapore (MAS)\",\n    \"url\": \"https://www.mas.gov.sg\"\n  },\n  {\n    \"name\": \"Dubai Virtual Assets Regulatory Authority (VARA)\",\n    \"url\": \"https://vara.ae\"\n  }\n]"
+[
+  {
+    "name": "Securities and Futures Commission (SFC)",
+    "url": "https://www.sfc.hk"
+  },
+  {
+    "name": "Hong Kong Monetary Authority (HKMA)",
+    "url": "https://www.hkma.gov.hk"
+  },
+  {
+    "name": "Hong Kong Government News",
+    "url": "https://www.news.gov.hk"
+  },
+  {
+    "name": "Office of the Financial Secretary",
+    "url": "https://www.fso.gov.hk"
+  },
+  {
+    "name": "Atlantic Council CBDC Tracker",
+    "url": "https://www.atlanticcouncil.org/cbdctracker/"
+  },
+  {
+    "name": "Monetary Authority of Singapore (MAS)",
+    "url": "https://www.mas.gov.sg"
+  },
+  {
+    "name": "Dubai Virtual Assets Regulatory Authority (VARA)",
+    "url": "https://vara.ae"
+  }
+]

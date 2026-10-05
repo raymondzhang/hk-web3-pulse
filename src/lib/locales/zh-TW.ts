@@ -1,1 +1,247 @@
-"import { getDomainData, getComparisonData, getTimelineData, getSources } from \"@/data/domain-data\";\n\nconst domainData = getDomainData(\"zh-TW\");\nconst comparisonData = getComparisonData(\"zh-TW\");\nconst timelineData = getTimelineData(\"zh-TW\");\nconst sources = getSources(\"zh-TW\");\n\nexport const zhTW = {\n  meta: {\n    title: \"HK Web3 Pulse | \u9999\u6e2fWeb3\u9032\u5c55\u9762\u677f\",\n    description:\n      \"\u5ba2\u89c0\u3001\u4e2d\u7acb\u3001\u53ef\u6301\u7e8c\u66f4\u65b0\u7684\u9999\u6e2fWeb3\u767c\u5c55\u5100\u8868\u677f\uff0c\u805a\u7126\u76e3\u7ba1\u3001RWA\u3001\u7a69\u5b9a\u5e63\u4e09\u5927\u9818\u57df\uff0c\u5c0d\u6a19\u5168\u7403\u9818\u5148\u53f8\u6cd5\u8f44\u5340\u3002\",\n  },\n\n  nav: {\n    home: \"\u9996\u9801\",\n    rwa: \"RWA \u8ffd\u8e64\u5668\",\n  },\n\n  hero: {\n    badge: \"MVP v1.0\",\n    title: \"HK Web3 Pulse\",\n    subtitle:\n      \"\u9999\u6e2f Web3 \u9032\u5c55\u9762\u677f \u2014 \u5ba2\u89c0\u8ffd\u8e2a\u9999\u6e2f\u5728\u76e3\u7ba1\u3001RWA\u3001\u7a69\u5b9a\u5e63\u4e09\u5927\u95dc\u9375\u9818\u57df\u7684\u771f\u5be6\u9032\u5c55\",\n    tagOfficial: \"\u57fa\u65bc\u516c\u958b\u5b98\u65b9\u4fe1\u606f\",\n    tagCompare: \"\u5c0d\u6a19\u65b0\u52a0\u5761 / \u8fea\u62dc\",\n  },\n\n  overallStatus: {\n    title: \"\u7e3d\u9ad4\u6210\u719f\u5ea6\u8a55\u4f30\",\n    maturity: \"\u6210\u719f\u5ea6\",\n    updated: \"\u66f4\u65b0\u65bc\",\n    accuracyNote:\n      \"\u57fa\u65bc\u516c\u958b\u5b98\u65b9\u4fe1\u606f\uff0c\u4eba\u5de5\u6821\u9a57\u3002\u6578\u64da\u53ef\u9ede\u64ca\u4e0b\u65b9\u4f86\u6e90\u9023\u7d50\u6838\u5be6\u3002\",\n  },\n\n  domains: {\n    title: \"\u4e09\u5927\u6838\u5fc3\u9818\u57df\",\n    subtitle:\n      \"\u805a\u7126\u76e3\u7ba1\u3001RWA \u4ee3\u5e63\u5316\u3001\u7a69\u5b9a\u5e63 \u2014 \u9999\u6e2f Web3 \u767c\u5c55\u7684\u95dc\u9375\u8cfd\u9053\",\n    sections: {\n      milestones: \"\u95dc\u9375\u91cc\u7a0b\u7891\",\n      globalComparison: \"\u5168\u7403\u5c0d\u6a19\",\n      lastUpdated: \"\u6700\u5f8c\u66f4\u65b0\",\n    },\n  },\n\n  comparison: {\n    title: \"\u5168\u7403\u5c0d\u6a19\u7c21\u8868\",\n    subtitle:\n      \"\u9999\u6e2f vs \u65b0\u52a0\u5761 vs \u8fea\u62dc \u2014 \u4e09\u5927\u95dc\u9375\u9818\u57df\u6a6b\u5411\u5c0d\u6bd4\",\n    dataSource:\n      \"\u6578\u64da\u4f86\u6e90\uff1aAtlantic Council / OMFIF Tracker + MAS\u5b98\u7db2 + VARA\u516c\u958b\u8cc7\u8a0a\",\n    headers: {\n      area: \"\u9818\u57df\",\n      hongKong: \"\u9999\u6e2f\",\n      singapore: \"\u65b0\u52a0\u5761\",\n      dubai: \"\u8fea\u62dc\",\n    },\n  },\n\n  timeline: {\n    title: \"\u95dc\u9375\u91cc\u7a0b\u7891\u6642\u9593\u7dda\",\n    subtitle: \"2022-2026 \u9999\u6e2f Web3 \u767c\u5c55\u6b77\u7a0b\u4e2d\u7684\u91cd\u8981\u7bc0\u9ede\",\n  },\n\n  footer: {\n    methodologyTitle: \"\u6578\u64da\u4f86\u6e90\u8207\u65b9\u6cd5\u8ad6\",\n    sourcesTitle: \"\u4e3b\u8981\u6578\u64da\u4f86\u6e90\",\n    reportError: \"\u5831\u544a\u932f\u8aa4\u6216\u5efa\u8b70\",\n    copyright: \"HK Web3 Pulse \u00a9 2026 \u2014 \u5ba2\u89c0\u8ffd\u8e2a\u9999\u6e2f Web3 \u767c\u5c55\u9032\u5c55\",\n  },\n\n  statusLabels: {\n    Leading: \"\u5168\u7403\u9818\u5148\",\n    Advancing: \"\u7a4d\u6975\u63a8\u9032\",\n    Developing: \"\u767c\u5c55\u4e2d\",\n    Emerging: \"\u8d77\u6b65\u968e\u6bb5\",\n  },\n\n  domainData,\n  comparisonData,\n  timelineData,\n\n  methodology:\n    \"\u672c\u9762\u677f\u6578\u64da\u57fa\u65bc\u516c\u958b\u5b98\u65b9\u8cc7\u8a0a\u6574\u7406\uff0c\u72c0\u614b\u5206\u7d1a\u63a1\u7528\u56db\u7d1a\u6a19\u6e96\uff1aLeading\uff08\u5168\u7403\u9818\u5148\uff09\u3001Advancing\uff08\u7a4d\u6975\u63a8\u9032\uff09\u3001Developing\uff08\u767c\u5c55\u4e2d\uff09\u3001Emerging\uff08\u8d77\u6b65\u968e\u6bb5\uff09\u3002\u6240\u6709\u91cc\u7a0b\u7891\u5747\u6a19\u8a3b\u5b98\u65b9\u4f86\u6e90\u9023\u7d50\uff0c\u652f\u6301\u4eba\u5de5\u6821\u9a57\u3002\",\n\n  disclaimer:\n    \"\u672c\u7db2\u7ad9\u5167\u5bb9\u50c5\u4f9b\u8cc7\u8a0a\u53c3\u8003\uff0c\u4e0d\u69cb\u6210\u4efb\u4f55\u6295\u8cc7\u5efa\u8b70\u3002\u6578\u64da\u57fa\u65bc\u516c\u958b\u8cc7\u8a0a\u6574\u7406\uff0c\u53ef\u80fd\u5b58\u5728\u6eef\u5f8c\u6216\u8aa4\u5dee\uff0c\u8acb\u4ee5\u5b98\u65b9\u767c\u4f48\u70ba\u6e96\u3002\",\n\n  likeButton: {\n    label: \"\u9ede\u8b9a\u652f\u6301\",\n    liked: \"\u5df2\u9ede\u8b9a\",\n  },\n\n  feedback: {\n    title: \"\u610f\u898b\u56de\u994b\",\n    subtitle: \"\u767c\u73fe\u6578\u64da\u6709\u8aa4\uff1f\u6709\u6539\u9032\u5efa\u8b70\uff1f\u6b61\u8fce\u544a\u8a34\u6211\u5011\u3002\",\n    nameLabel: \"\u59d3\u540d\",\n    namePlaceholder: \"\u9078\u586b\",\n    emailLabel: \"\u96fb\u90f5\",\n    emailPlaceholder: \"\u9078\u586b\uff0c\u65b9\u4fbf\u6211\u5011\u56de\u8986\u4f60\",\n    messageLabel: \"\u610f\u898b\u5167\u5bb9\",\n    messagePlaceholder: \"\u8acb\u63cf\u8ff0\u4f60\u767c\u73fe\u7684\u554f\u984c\u6216\u5efa\u8b70\u2026\",\n    privacyNote: \"\u6211\u5011\u4e0d\u6703\u516c\u958b\u4f60\u7684\u500b\u4eba\u8cc7\u8a0a\",\n    submitButton: \"\u63d0\u4ea4\",\n    sending: \"\u767c\u9001\u4e2d\u2026\",\n    sent: \"\u5df2\u63d0\u4ea4\uff0c\u8b1d\u8b1d\uff01\",\n    error: \"\u63d0\u4ea4\u5931\u6557\uff0c\u8acb\u7a0d\u5f8c\u91cd\u8a66\u6216\u76f4\u63a5\u767c\u90f5\u4ef6\u7d66\u6211\u5011\u3002\",\n    directEmail: \"\u4e5f\u53ef\u4ee5\u76f4\u63a5\u767c\u90f5\u4ef6\u5230 414628016@qq.com\",\n  },\n\n  sources,\n\n  // \u2500\u2500\u2500 RWA Tracker \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n  rwa: {\n    hero: {\n      back: \"\u2190 \u8fd4\u56de\u4e3b\u9762\u677f\",\n      badge: \"RWA Tracker v1.0\",\n      title: \"\u9999\u6e2f RWA \u8da8\u52e2\u8ffd\u8e64\",\n      subtitle: \"\u5168\u7403 RWA \u5e02\u5834\u5168\u666f + \u9999\u6e2f\u672c\u5730\u5316\u9069\u7528\u6027\u5206\u6790\",\n      tagBenchmark: \"\u5168\u7403 vs \u9999\u6e2f\u5c0d\u6a19\",\n      navTitle: \"\ud83d\udcca RWA \u8da8\u52e2\u8ffd\u8e64\",\n      navSubtitle: \"\u5168\u7403 $38.2B RWA \u5e02\u5834\u5168\u666f + \u9999\u6e2f\u672c\u5730\u5316\u5206\u6790 \u2192\",\n    },\n    overview: {\n      title: \"\u5168\u7403 RWA \u5e02\u5834\u6982\u89bd\",\n      subtitle: \"\u6578\u64da\u4f86\u81ea RWA.xyz \u548c DeFiLlama\uff0c\u4ea4\u53c9\u9a57\u8b49\",\n      dataDate: \"\u6578\u64da\u65e5\u671f\",\n      totalAum: \"RWA \u7e3d AUM\",\n      totalTvl: \"DeFi TVL\",\n      holders: \"\u6301\u6709\u4eba\u7e3d\u6578\",\n      holdersSub: \"40\u5929\u589e {growth}\uff0c\u65b0\u589e {new}\",\n      stockGrowth: \"\u65b0\u589e\u4f86\u81ea\u80a1\u7968\",\n      stockGrowthSub: \"93% \u65b0\u589e\u7528\u6236\u4f86\u81ea\u80a1\u7968\u985e\u8cc7\u7522\",\n      dataGapTitle: \"\u6578\u64da\u5dee\u7570\",\n      dataGapNote: \"RWA.xyz \u8ffd\u8e64 1,203 \u500b\u8cc7\u7522 ($38.2B)\uff0cDeFiLlama \u50c5\u8986\u84cb 106 \u500b\u5354\u8b70 ($27.7B)\u3002\u5dee\u7570\u4e3b\u8981\u4f86\u81ea\u975e\u7f8e\u5143\u8cc7\u7522\u3001\u6a5f\u69cb\u7d1a\u7522\u54c1\u548c\u65b0\u8208\u9805\u76ee\u3002\u5e02\u5834\u898f\u6a21\u4ee5 RWA.xyz \u70ba\u6e96\u3002\",\n    },\n    assets: {\n      title: \"\u8cc7\u7522\u985e\u578b\u6392\u884c\",\n      subtitle: \"\u6309 TVL \u6392\u540d\u7684 RWA \u8cc7\u7522\u985e\u5225\uff0c\u6a19\u8a3b\u9999\u6e2f\u9069\u7528\u6027\",\n      hkRelevance: \"\u9999\u6e2f\u9069\u7528\",\n      hkNote: \"\u9999\u6e2f\u8a55\u4f30\",\n      categoryNames: {\n        treasury: \"\u570b\u50b5/\u653f\u5e9c\u50b5\u5238\",\n        gold: \"\u9ec3\u91d1/\u5927\u5b97\u5546\u54c1\",\n        stocks: \"\u80a1\u7968\u8207\u8b49\u5238\",\n        privateCredit: \"\u79c1\u4eba\u4fe1\u8cb8\",\n        moneyMarket: \"\u8ca8\u5e63\u5e02\u5834/\u6307\u6578\",\n        realEstate: \"\u623f\u5730\u7522\",\n        other: \"\u5176\u4ed6\",\n      },\n    },\n    projects: {\n      title: \"\u982d\u90e8\u9805\u76ee\u6392\u884c\",\n      subtitle: \"\u6309 TVL \u6392\u540d\u7684\u5168\u7403 RWA \u5354\u8b70\uff0c\ud83c\udded\ud83c\uddf0 \u6a19\u8a18\u8868\u793a\u8207\u9999\u6e2f\u76f8\u95dc\",\n      name: \"\u9805\u76ee\",\n      category: \"\u985e\u5225\",\n      tvl: \"TVL\",\n      issuer: \"\u767c\u884c\u65b9\",\n      chain: \"\u93c8\",\n      hkRelevant: \"\u9999\u6e2f\",\n    },\n    stocks: {\n      title: \"\u80a1\u7968\u4ee3\u5e63\u5316 \u2014 \u7576\u524d\u6700\u5927\u7206\u767c\u9ede\",\n      subtitle: \"40\u5929\u65b0\u589e 70 \u842c\u7528\u6236\uff0c93% \u4f86\u81ea\u80a1\u7968\u985e\u8cc7\u7522\u3002Top 3 \u4f54\u5e02\u5834 86.5%\",\n      platform: \"\u5e73\u53f0\",\n      stockCount: \"\u5e95\u5c64\u80a1\u7968\u6578\",\n      value: \"\u7e3d\u50f9\u503c\",\n      marketShare: \"\u5e02\u5834\u4efd\u984d\",\n      distributed: \"Distributed\",\n      hkUnavailable: \"\u26a0\ufe0f \u9999\u6e2f\u4e0d\u53ef\u7528\",\n    },\n    chains: {\n      title: \"\u93c8\u5206\u4f48\u683c\u5c40\",\n      subtitle: \"RWA \u4ee3\u5e63\u5316\u7684\u4e3b\u8981\u90e8\u7f72\u93c8\uff0cEthereum \u4ecd\u70ba\u7d55\u5c0d\u4e3b\u5c0e\",\n      dominanceLabels: {\n        dominant: \"\u4e3b\u5c0e\",\n        growing: \"\u589e\u9577\u4e2d\",\n        emerging: \"\u65b0\u8208\",\n      },\n    },\n    hk: {\n      title: \"\u9999\u6e2f RWA \u672c\u5730\u5316\u5206\u6790\",\n      subtitle: \"\u5168\u7403\u8da8\u52e2\u7684 30-40% \u76f4\u63a5\u9069\u7528\u65bc\u9999\u6e2f\uff0c60-70% \u9700\u8981\u672c\u5730\u5316\u4fee\u6b63\",\n      comparisonMetric: \"\u6307\u6a19\",\n      global: \"\u5168\u7403\",\n      hongKong: \"\u9999\u6e2f\",\n      gap: \"\u5dee\u8ddd\",\n      rwaTvl: \"RWA TVL\",\n      holders: \"\u6301\u6709\u4eba\u6578\",\n      tokenizedStocks: \"\u4ee3\u5e63\u5316\u80a1\u7968\",\n      compliantChannels: \"\u5408\u898f\u6e20\u9053\u6578\",\n      notAvailable: \"\u4e0d\u5b58\u5728\",\n      vatps: \"\u6301\u724c\u865b\u64ec\u8cc7\u7522\u4ea4\u6613\u5e73\u53f0 (VATP)\",\n      products: \"\u9999\u6e2f RWA \u7522\u54c1\",\n      regulatoryAccess: \"\u76e3\u7ba1\u6e96\u5165\u72c0\u614b\",\n      accessLabels: {\n        retailTreasury: \"\u6563\u6236\u00b7\u570b\u50b5\",\n        retailStocks: \"\u6563\u6236\u00b7\u80a1\u7968\",\n        retailGold: \"\u6563\u6236\u00b7\u9ec3\u91d1\",\n        piTreasury: \"\u5c08\u696d\u6295\u8cc7\u8005\u00b7\u570b\u50b5\",\n        piThreshold: \"PI \u9580\u6abb\",\n        stablecoin: \"\u7a69\u5b9a\u5e63\",\n      },\n    },\n    trends: {\n      title: \"\u95dc\u9375\u8da8\u52e2\u8207\u9999\u6e2f\u5f71\u97ff\",\n      subtitle: \"\u5168\u7403 RWA \u516b\u5927\u8da8\u52e2\uff0c\u6a19\u6ce8\u5c0d\u9999\u6e2f\u7684\u5f71\u97ff\u7a0b\u5ea6\",\n      hkImpact: \"\u9999\u6e2f\u5f71\u97ff\",\n      impactLabels: {\n        high: \"\u9ad8\",\n        medium: \"\u4e2d\",\n        low: \"\u4f4e\",\n      },\n    },\n    disclosure: {\n      title: \"\u9999\u6e2f RWA \u93c8\u4e0a\u8cc7\u7522\u4ea4\u6613\u4fe1\u606f\u62ab\u9732\",\n      subtitle: \"\u5c0d\u6a19 RWA.xyz \u9999\u6e2f\u7248 \u2014 \u93c8\u4e0a\u6578\u64da\u76f4\u8b80 + \u5408\u898f\u72c0\u614b + \u4ea4\u6613\u6d41\u52d5\u6027\uff0c\u900f\u660e\u62ab\u9732\u6240\u6709\u9999\u6e2f\u76f8\u95dc RWA \u7522\u54c1\",\n      updated: \"\u6578\u64da\u66f4\u65b0\u65bc\",\n      onchainTitle: \"\u93c8\u4e0a Token \u6578\u64da\u76f4\u8b80\",\n      complianceTitle: \"SFC \u5408\u898f\u62ab\u9732\u8868\",\n      liquidityTitle: \"\u4ea4\u6613\u8207\u6d41\u52d5\u6027\u6578\u64da\",\n      dataSourcesTitle: \"\u6578\u64da\u4f86\u6e90\",\n      disclaimerTitle: \"\u6578\u64da\u514d\u8cac\u8072\u660e\",\n      disclaimerNote:\n        \"\u672c\u677f\u584a\u6578\u64da\u4f86\u6e90\u65bc\u516c\u958b\u93c8\u4e0a\u6578\u64da\u3001SFC/HKMA \u5b98\u65b9\u516c\u544a\u53ca\u7b2c\u4e09\u65b9\u5e73\u53f0\u3002\u93c8\u4e0a\u6578\u64da\u53ef\u80fd\u5b58\u5728\u5ef6\u9072\uff0c\u5408\u898f\u72c0\u614b\u4ee5\u5b98\u65b9\u6700\u65b0\u767c\u5e03\u70ba\u6e96\u3002\u6578\u64da\u50c5\u4f9b\u53c3\u8003\uff0c\u4e0d\u69cb\u6210\u4efb\u4f55\u6295\u8cc7\u5efa\u8b70\u3002\",\n      contract: \"\u5408\u7d04\u5730\u5740\",\n      chain: \"\u93c8\",\n      totalSupply: \"\u7e3d\u4f9b\u61c9\u91cf\",\n      holders: \"\u6301\u6709\u4eba\",\n      transfers24h: \"24h \u8f49\u8cec\",\n      price: \"\u50f9\u683c\",\n      liquidity: \"\u6d41\u52d5\u6027\",\n      product: \"\u7522\u54c1\",\n      issuer: \"\u767c\u884c\u65b9\",\n      sfcStatus: \"SFC \u72c0\u614b\",\n      vatp: \"VATP \u4e0a\u67b6\",\n      investor: \"\u6295\u8cc7\u8005\u985e\u578b\",\n      restrictions: \"\u9650\u5236\u689d\u6b3e\",\n      launch: \"\u4e0a\u7dda\u6642\u9593\",\n      tvl: \"TVL\",\n      volume24h: \"24h \u4ea4\u6613\u91cf\",\n    },\n  },\n};\n"
+import { getDomainData, getComparisonData, getTimelineData, getSources } from "@/data/domain-data";
+
+const domainData = getDomainData("zh-TW");
+const comparisonData = getComparisonData("zh-TW");
+const timelineData = getTimelineData("zh-TW");
+const sources = getSources("zh-TW");
+
+export const zhTW = {
+  meta: {
+    title: "HK Web3 Pulse | 香港Web3進展面板",
+    description:
+      "客觀、中立、可持續更新的香港Web3發展儀表板，聚焦監管、RWA、穩定幣三大領域，對標全球領先司法轄區。",
+  },
+
+  nav: {
+    home: "首頁",
+    rwa: "RWA 追蹤器",
+  },
+
+  hero: {
+    badge: "MVP v1.0",
+    title: "HK Web3 Pulse",
+    subtitle:
+      "香港 Web3 進展面板 — 客觀追踪香港在監管、RWA、穩定幣三大關鍵領域的真實進展",
+    tagOfficial: "基於公開官方信息",
+    tagCompare: "對標新加坡 / 迪拜",
+  },
+
+  overallStatus: {
+    title: "總體成熟度評估",
+    maturity: "成熟度",
+    updated: "更新於",
+    accuracyNote:
+      "基於公開官方信息，人工校驗。數據可點擊下方來源連結核實。",
+  },
+
+  domains: {
+    title: "三大核心領域",
+    subtitle:
+      "聚焦監管、RWA 代幣化、穩定幣 — 香港 Web3 發展的關鍵賽道",
+    sections: {
+      milestones: "關鍵里程碑",
+      globalComparison: "全球對標",
+      lastUpdated: "最後更新",
+    },
+  },
+
+  comparison: {
+    title: "全球對標簡表",
+    subtitle:
+      "香港 vs 新加坡 vs 迪拜 — 三大關鍵領域橫向對比",
+    dataSource:
+      "數據來源：Atlantic Council / OMFIF Tracker + MAS官網 + VARA公開資訊",
+    headers: {
+      area: "領域",
+      hongKong: "香港",
+      singapore: "新加坡",
+      dubai: "迪拜",
+    },
+  },
+
+  timeline: {
+    title: "關鍵里程碑時間線",
+    subtitle: "2022-2026 香港 Web3 發展歷程中的重要節點",
+  },
+
+  footer: {
+    methodologyTitle: "數據來源與方法論",
+    sourcesTitle: "主要數據來源",
+    reportError: "報告錯誤或建議",
+    copyright: "HK Web3 Pulse © 2026 — 客觀追踪香港 Web3 發展進展",
+  },
+
+  statusLabels: {
+    Leading: "全球領先",
+    Advancing: "積極推進",
+    Developing: "發展中",
+    Emerging: "起步階段",
+  },
+
+  domainData,
+  comparisonData,
+  timelineData,
+
+  methodology:
+    "本面板數據基於公開官方資訊整理，狀態分級採用四級標準：Leading（全球領先）、Advancing（積極推進）、Developing（發展中）、Emerging（起步階段）。所有里程碑均標註官方來源連結，支持人工校驗。",
+
+  disclaimer:
+    "本網站內容僅供資訊參考，不構成任何投資建議。數據基於公開資訊整理，可能存在滯後或誤差，請以官方發佈為準。",
+
+  likeButton: {
+    label: "點讚支持",
+    liked: "已點讚",
+  },
+
+  feedback: {
+    title: "意見回饋",
+    subtitle: "發現數據有誤？有改進建議？歡迎告訴我們。",
+    nameLabel: "姓名",
+    namePlaceholder: "選填",
+    emailLabel: "電郵",
+    emailPlaceholder: "選填，方便我們回覆你",
+    messageLabel: "意見內容",
+    messagePlaceholder: "請描述你發現的問題或建議…",
+    privacyNote: "我們不會公開你的個人資訊",
+    submitButton: "提交",
+    sending: "發送中…",
+    sent: "已提交，謝謝！",
+    error: "提交失敗，請稍後重試或直接發郵件給我們。",
+    directEmail: "也可以直接發郵件到 414628016@qq.com",
+  },
+
+  sources,
+
+  // ─── RWA Tracker ────────────────────────────────────────────────────
+
+  rwa: {
+    hero: {
+      back: "← 返回主面板",
+      badge: "RWA Tracker v1.0",
+      title: "香港 RWA 趨勢追蹤",
+      subtitle: "全球 RWA 市場全景 + 香港本地化適用性分析",
+      tagBenchmark: "全球 vs 香港對標",
+      navTitle: "📊 RWA 趨勢追蹤",
+      navSubtitle: "全球 $38.2B RWA 市場全景 + 香港本地化分析 →",
+    },
+    overview: {
+      title: "全球 RWA 市場概覽",
+      subtitle: "數據來自 RWA.xyz 和 DeFiLlama，交叉驗證",
+      dataDate: "數據日期",
+      totalAum: "RWA 總 AUM",
+      totalTvl: "DeFi TVL",
+      holders: "持有人總數",
+      holdersSub: "40天增 {growth}，新增 {new}",
+      stockGrowth: "新增來自股票",
+      stockGrowthSub: "93% 新增用戶來自股票類資產",
+      dataGapTitle: "數據差異",
+      dataGapNote: "RWA.xyz 追蹤 1,203 個資產 ($38.2B)，DeFiLlama 僅覆蓋 106 個協議 ($27.7B)。差異主要來自非美元資產、機構級產品和新興項目。市場規模以 RWA.xyz 為準。",
+    },
+    assets: {
+      title: "資產類型排行",
+      subtitle: "按 TVL 排名的 RWA 資產類別，標註香港適用性",
+      hkRelevance: "香港適用",
+      hkNote: "香港評估",
+      categoryNames: {
+        treasury: "國債/政府債券",
+        gold: "黃金/大宗商品",
+        stocks: "股票與證券",
+        privateCredit: "私人信貸",
+        moneyMarket: "貨幣市場/指數",
+        realEstate: "房地產",
+        other: "其他",
+      },
+    },
+    projects: {
+      title: "頭部項目排行",
+      subtitle: "按 TVL 排名的全球 RWA 協議，🇭🇰 標記表示與香港相關",
+      name: "項目",
+      category: "類別",
+      tvl: "TVL",
+      issuer: "發行方",
+      chain: "鏈",
+      hkRelevant: "香港",
+    },
+    stocks: {
+      title: "股票代幣化 — 當前最大爆發點",
+      subtitle: "40天新增 70 萬用戶，93% 來自股票類資產。Top 3 佔市場 86.5%",
+      platform: "平台",
+      stockCount: "底層股票數",
+      value: "總價值",
+      marketShare: "市場份額",
+      distributed: "Distributed",
+      hkUnavailable: "⚠️ 香港不可用",
+    },
+    chains: {
+      title: "鏈分佈格局",
+      subtitle: "RWA 代幣化的主要部署鏈，Ethereum 仍為絕對主導",
+      dominanceLabels: {
+        dominant: "主導",
+        growing: "增長中",
+        emerging: "新興",
+      },
+    },
+    hk: {
+      title: "香港 RWA 本地化分析",
+      subtitle: "全球趨勢的 30-40% 直接適用於香港，60-70% 需要本地化修正",
+      comparisonMetric: "指標",
+      global: "全球",
+      hongKong: "香港",
+      gap: "差距",
+      rwaTvl: "RWA TVL",
+      holders: "持有人數",
+      tokenizedStocks: "代幣化股票",
+      compliantChannels: "合規渠道數",
+      notAvailable: "不存在",
+      vatps: "持牌虛擬資產交易平台 (VATP)",
+      products: "香港 RWA 產品",
+      regulatoryAccess: "監管準入狀態",
+      accessLabels: {
+        retailTreasury: "散戶·國債",
+        retailStocks: "散戶·股票",
+        retailGold: "散戶·黃金",
+        piTreasury: "專業投資者·國債",
+        piThreshold: "PI 門檻",
+        stablecoin: "穩定幣",
+      },
+    },
+    trends: {
+      title: "關鍵趨勢與香港影響",
+      subtitle: "全球 RWA 八大趨勢，標注對香港的影響程度",
+      hkImpact: "香港影響",
+      impactLabels: {
+        high: "高",
+        medium: "中",
+        low: "低",
+      },
+    },
+    disclosure: {
+      title: "香港 RWA 鏈上資產交易信息披露",
+      subtitle: "對標 RWA.xyz 香港版 — 鏈上數據直讀 + 合規狀態 + 交易流動性，透明披露所有香港相關 RWA 產品",
+      updated: "數據更新於",
+      onchainTitle: "鏈上 Token 數據直讀",
+      complianceTitle: "SFC 合規披露表",
+      liquidityTitle: "交易與流動性數據",
+      dataSourcesTitle: "數據來源",
+      disclaimerTitle: "數據免責聲明",
+      disclaimerNote:
+        "本板塊數據來源於公開鏈上數據、SFC/HKMA 官方公告及第三方平台。鏈上數據可能存在延遲，合規狀態以官方最新發布為準。數據僅供參考，不構成任何投資建議。",
+      contract: "合約地址",
+      chain: "鏈",
+      totalSupply: "總供應量",
+      holders: "持有人",
+      transfers24h: "24h 轉賬",
+      price: "價格",
+      liquidity: "流動性",
+      product: "產品",
+      issuer: "發行方",
+      sfcStatus: "SFC 狀態",
+      vatp: "VATP 上架",
+      investor: "投資者類型",
+      restrictions: "限制條款",
+      launch: "上線時間",
+      tvl: "TVL",
+      volume24h: "24h 交易量",
+    },
+  },
+};

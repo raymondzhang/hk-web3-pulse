@@ -1,1 +1,86 @@
-"import type { StatusLevel } from \"@/types\";\n\nimport enDomainData from \"./domainData.en.json\";\nimport zhCNDomainData from \"./domainData.zh-CN.json\";\nimport zhTWDomainData from \"./domainData.zh-TW.json\";\n\nimport enComparisonData from \"./comparisonData.en.json\";\nimport zhCNComparisonData from \"./comparisonData.zh-CN.json\";\nimport zhTWComparisonData from \"./comparisonData.zh-TW.json\";\n\nimport enTimelineData from \"./timelineData.en.json\";\nimport zhCNTimelineData from \"./timelineData.zh-CN.json\";\nimport zhTWTimelineData from \"./timelineData.zh-TW.json\";\n\nimport enSources from \"./sources.en.json\";\nimport zhCNSources from \"./sources.zh-CN.json\";\nimport zhTWSources from \"./sources.zh-TW.json\";\n\nexport interface DomainEntry {\n  id: string;\n  status: StatusLevel;\n  name: string;\n  description: string;\n  globalComparison: string;\n  milestones: { date: string; description: string[] }[];\n  lastUpdated: string;\n}\n\nexport interface ComparisonEntry {\n  area: string;\n  hongKong: string;\n  singapore: string;\n  dubai: string;\n}\n\nexport interface TimelineEntry {\n  date: string;\n  title: string;\n  description: string;\n}\n\nexport interface SourceEntry {\n  name: string;\n  url: string;\n}\n\n// Cast status from string to StatusLevel \u2014 trusted data from JSON\nfunction castDomains(data: { id: string; status: string; name: string; description: string; globalComparison: string; milestones: { date: string; description: string[] }[]; lastUpdated: string }[]): DomainEntry[] {\n  return data.map((d) => ({ ...d, status: d.status as StatusLevel }));\n}\n\nexport function getDomainData(locale: string) {\n  const map: Record<string, DomainEntry[]> = {\n    en: castDomains(enDomainData),\n    \"zh-CN\": castDomains(zhCNDomainData),\n    \"zh-TW\": castDomains(zhTWDomainData),\n  };\n  return map[locale] ?? map[\"zh-CN\"];\n}\n\nexport function getComparisonData(locale: string) {\n  const map: Record<string, ComparisonEntry[]> = {\n    en: enComparisonData,\n    \"zh-CN\": zhCNComparisonData,\n    \"zh-TW\": zhTWComparisonData,\n  };\n  return map[locale] ?? map[\"zh-CN\"];\n}\n\nexport function getTimelineData(locale: string) {\n  const map: Record<string, TimelineEntry[]> = {\n    en: enTimelineData,\n    \"zh-CN\": zhCNTimelineData,\n    \"zh-TW\": zhTWTimelineData,\n  };\n  return map[locale] ?? map[\"zh-CN\"];\n}\n\nexport function getSources(locale: string) {\n  const map: Record<string, SourceEntry[]> = {\n    en: enSources,\n    \"zh-CN\": zhCNSources,\n    \"zh-TW\": zhTWSources,\n  };\n  return map[locale] ?? map[\"zh-CN\"];\n}"
+import type { StatusLevel } from "@/types";
+
+import enDomainData from "./domainData.en.json";
+import zhCNDomainData from "./domainData.zh-CN.json";
+import zhTWDomainData from "./domainData.zh-TW.json";
+
+import enComparisonData from "./comparisonData.en.json";
+import zhCNComparisonData from "./comparisonData.zh-CN.json";
+import zhTWComparisonData from "./comparisonData.zh-TW.json";
+
+import enTimelineData from "./timelineData.en.json";
+import zhCNTimelineData from "./timelineData.zh-CN.json";
+import zhTWTimelineData from "./timelineData.zh-TW.json";
+
+import enSources from "./sources.en.json";
+import zhCNSources from "./sources.zh-CN.json";
+import zhTWSources from "./sources.zh-TW.json";
+
+export interface DomainEntry {
+  id: string;
+  status: StatusLevel;
+  name: string;
+  description: string;
+  globalComparison: string;
+  milestones: { date: string; description: string[] }[];
+  lastUpdated: string;
+}
+
+export interface ComparisonEntry {
+  area: string;
+  hongKong: string;
+  singapore: string;
+  dubai: string;
+}
+
+export interface TimelineEntry {
+  date: string;
+  title: string;
+  description: string;
+}
+
+export interface SourceEntry {
+  name: string;
+  url: string;
+}
+
+// Cast status from string to StatusLevel — trusted data from JSON
+function castDomains(data: { id: string; status: string; name: string; description: string; globalComparison: string; milestones: { date: string; description: string[] }[]; lastUpdated: string }[]): DomainEntry[] {
+  return data.map((d) => ({ ...d, status: d.status as StatusLevel }));
+}
+
+export function getDomainData(locale: string) {
+  const map: Record<string, DomainEntry[]> = {
+    en: castDomains(enDomainData),
+    "zh-CN": castDomains(zhCNDomainData),
+    "zh-TW": castDomains(zhTWDomainData),
+  };
+  return map[locale] ?? map["zh-CN"];
+}
+
+export function getComparisonData(locale: string) {
+  const map: Record<string, ComparisonEntry[]> = {
+    en: enComparisonData,
+    "zh-CN": zhCNComparisonData,
+    "zh-TW": zhTWComparisonData,
+  };
+  return map[locale] ?? map["zh-CN"];
+}
+
+export function getTimelineData(locale: string) {
+  const map: Record<string, TimelineEntry[]> = {
+    en: enTimelineData,
+    "zh-CN": zhCNTimelineData,
+    "zh-TW": zhTWTimelineData,
+  };
+  return map[locale] ?? map["zh-CN"];
+}
+
+export function getSources(locale: string) {
+  const map: Record<string, SourceEntry[]> = {
+    en: enSources,
+    "zh-CN": zhCNSources,
+    "zh-TW": zhTWSources,
+  };
+  return map[locale] ?? map["zh-CN"];
+}
