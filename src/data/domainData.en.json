@@ -37,13 +37,13 @@
         ]
       },
       {
-        "date": "2026-Q3",
+        "date": "2026-09",
         "description": [
-          "Legislative proposals for four new VA licensing regimes (dealers, custodians, advisors, asset managers) being prepared for LegCo"
+          "FSTB Secretary Christopher Hui confirmed the government will submit an amendment bill to LegCo within 2026 to establish a licensing regime for VA dealing, custody, advising and asset management"
         ]
       }
     ],
-    "lastUpdated": "2026-08-12"
+    "lastUpdated": "2026-10-06"
   },
   {
     "id": "rwa",
@@ -79,7 +79,7 @@
       {
         "date": "2026-07",
         "description": [
-          "SFC approved Hong Kong's first fully native tokenized bond fund (Baillie Gifford), signaling global institutions accelerating HK布局"
+          "SFC approved Hong Kong's first fully native tokenized bond fund (Baillie Gifford), signaling global institutions accelerating Hong Kong expansion"
         ]
       },
       {
@@ -87,15 +87,21 @@
         "description": [
           "DACC (Digital Asset Clearing Center) headquartered in Hong Kong, building infrastructure for tokenized bonds, stablecoins, and cross-border RMB settlement"
         ]
+      },
+      {
+        "date": "2026-09",
+        "description": [
+          "FSTB announced a pilot to tokenize Exchange Fund Bills by end-2026, adding a new government-side RWA infrastructure initiative"
+        ]
       }
     ],
-    "lastUpdated": "2026-08-12"
+    "lastUpdated": "2026-10-06"
   },
   {
     "id": "stablecoins",
     "status": "Advancing",
     "name": "Stablecoins",
-    "description": "The stablecoin regulatory framework is fully operational: HSBC and Anchorpoint hold the first licenses, 36 formal applications are under review, and the HKMA maintains an 'open yet cautious' stance on a second batch of licenses potentially around October.",
+    "description": "The stablecoin regulatory framework is fully operational: HSBC and Anchorpoint hold the first licenses, 36 formal applications are under review. As of early October the timing of a second batch remains market speculation — the HKMA has declined to comment and issued no official confirmation.",
     "globalComparison": "Framework maturity comparable to Singapore's MAS framework, but with a distinct large-bank-focused licensing strategy; mainland China's Circular 42 explicitly banned unauthorized yuan stablecoins.",
     "milestones": [
       {
@@ -133,8 +139,14 @@
         "description": [
           "HKMA says 'open yet cautious' on more licenses; market rumors suggest second batch may be approved around October National Day"
         ]
+      },
+      {
+        "date": "2026-09",
+        "description": [
+          "HKMA declined to comment on rumors of a second licence batch around October; timing remains unconfirmed ('36 to 2' still speculation)"
+        ]
       }
     ],
-    "lastUpdated": "2026-08-12"
+    "lastUpdated": "2026-10-06"
   }
 ]

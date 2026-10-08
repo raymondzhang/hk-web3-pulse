@@ -1,10 +1,12 @@
 name: Daily Pulse Check
 
 on:
-  schedule:
-    # 每天 9:00 AM HKT = 1:00 AM UTC
-    - cron: '0 1 * * *'
-  workflow_dispatch:  # 允许手动触发
+  # schedule:
+  #   # 每天 9:00 AM HKT = 1:00 AM UTC
+  #   # 已于 2026-10-07 停用：定时任务实际未更新数据（JSON 卡在 2026-08-12），
+  #   # 且担心静默覆盖人工校订内容。如需恢复，取消下方两行注释即可。
+  #   - cron: '0 1 * * *'
+  workflow_dispatch:  # 仅保留手动触发
 
 jobs:
   pulse-check:
